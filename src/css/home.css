@@ -115,48 +115,6 @@ h2 {
     width: auto;
 }
 
-/* Font Awesome */
-.outlink {
-    text-decoration: none;
-    font-size: 1.5em;
-    width: 1.75em; 
-    background-color: #D12C3A;
-    color: white;
-    padding: 8px;
-    border-radius: 10px;
-    margin-bottom: 5px;
-    transition: all .2s ease;
-}
-
-.outlink:hover{  
-    transform: scale(1.1); 
-    color: var(--light--a-hover)
-}
-
-.outlink a{
-    color: white;
-}
-
-.outlink:not([href*="https://tri4ge.icu/"]):not([href^="#"]):not([href^="/"]):not(.no-icon)::after {
-    content: none; /* Code for "arrow-up-right-from-square" */
-}
-
-.outlink[aria-label]:hover:not([href*="https://tri4ge.icu/"]):not([href^="#"]):not([href^="/"]):not(.no-icon)::after {
-  content: attr(aria-label);
-  position: absolute;
-  top: -80%;
-  left: -25%;
-  z-index: 100;
-  background-color: var(--light--bg-secondary);
-  color: var(--light--text-secondary);
-  width: fit-content;
-  font-size: 0.5em;
-  font-family: 'Mali';
-  padding: 10px;
-  border-radius: 15px;
-  animation: fadeInUp 0.25s ease-out;
-}
-
 /* Mobile */
 @media only screen and (max-width: 980px) {
 
