@@ -7,7 +7,7 @@
 /* Must start with ".site-box". Change how your website will appear on main nekoweb site: https://nekoweb.org/assets/siteboxes.png */
 #site-tri4ge-icu.site-box {
   text-align: center;
-  background-image: url(https://tri4ge.nekoweb.org/img/presitebg.jpg); /* Only your-username.nekoweb.org URLs allowed, use FULL url to your file like https://your-username.nekoweb.org/your-username.nekoweb.org/bg.png */
+  background-image: url(//tri4ge.nekoweb.org/img/presitebg.jpg); /* Only your-username.nekoweb.org URLs allowed, use FULL url to your file like https://your-username.nekoweb.org/your-username.nekoweb.org/bg.png */
   background-repeat: repeat;
   color: #b08271;
   font-size: 12px;
@@ -45,14 +45,13 @@
 }
 
 #site-tri4ge-icu.site-box::after {
+  content: url(//tri4ge.nekoweb.org/img/presitehyson.png);
   display: block;
   height: 100px;
   width: auto;
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: relative;
-  margin-left: -200px;
-  top: -200px;
+  position: absolute;
+  left: -15px;
+  bottom: 58px;
   transition: transform 0.5s ease;
 }
 
