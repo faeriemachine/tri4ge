@@ -306,7 +306,8 @@ a:hover{
 
 .outlink:hover{  
     transform: scale(1.1); 
-    color: var(--light--a-hover)
+    background-color: var(--light--a-hover);
+    color: white;
 }
 
 .outlink a{
