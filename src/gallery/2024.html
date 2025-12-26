@@ -1,0 +1,81 @@
+---
+title: Gallery 2026
+layout: base.njk
+---
+<div class="welcome content">
+    <h1 id="gallery">Gallery</h1>
+    <h3 id="2025-2026-2027" style="text-align: center;">⮘ 2023 || 2024 || <a href="/gallery/2025/">2025</a> ⮚</h3>
+    <p>Welcome to my gallery for 2026! This is a page dedicated to my illustrations, including everything from sketches, to fully-fledged paintings. Ordered chronologically.</p>
+    <p><strong>Hint!</strong> Use the left and right arrow keys to cycle through the gallery when previewing images on desktop! You can also click to zoom in and out, and click and drag the image when zoomed in.</p>
+</div>
+  <div class="box box-container three-cols" style="text-align: center;">
+    <p>Nothing's here yet, check back later!</p>
+</div>
+<link rel="stylesheet" href="/css/gallery.css" />
+<link rel="stylesheet" href="/css/glightbox.css" />
+<script src="/js/glightbox.min.js"></script>
+
+
+<script type="text/javascript">
+    import '/js/glightbox.js';
+</script>
+<script>
+            var lightbox = GLightbox();
+            lightbox.on('open', (target) => {
+                console.log('lightbox opened');
+            });
+            var lightboxDescription = GLightbox({
+                selector: '.glightbox2'
+            });
+            var lightboxVideo = GLightbox({
+                selector: '.glightbox3'
+            });
+            lightboxVideo.on('slide_changed', ({ prev, current }) => {
+                console.log('Prev slide', prev);
+                console.log('Current slide', current);
+
+                const { slideIndex, slideNode, slideConfig, player } = current;
+
+                if (player) {
+                    if (!player.ready) {
+                        // If player is not ready
+                        player.on('ready', (event) => {
+                            // Do something when video is ready
+                        });
+                    }
+
+                    player.on('play', (event) => {
+                        console.log('Started play');
+                    });
+
+                    player.on('volumechange', (event) => {
+                        console.log('Volume change');
+                    });
+
+                    player.on('ended', (event) => {
+                        console.log('Video ended');
+                    });
+                }
+            });
+
+            var lightboxInlineIframe = GLightbox({
+                selector: '.glightbox4'
+            });
+
+            /* var exampleApi = GLightbox({ selector: null });
+            exampleApi.insertSlide({
+                href: 'https://picsum.photos/1200/800',
+            });
+            exampleApi.insertSlide({
+                width: '500px',
+                content: '<p>Example</p>'
+            });
+            exampleApi.insertSlide({
+                href: 'https://www.youtube.com/watch?v=WzqrwPhXmew',
+            });
+            exampleApi.insertSlide({
+                width: '200vw',
+                content: document.getElementById('inline-example')
+            });
+            exampleApi.open(); */
+</script>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% include "basehead.njk" %}
+  {% block head %}{% endblock %}
+</head>
+
+<body>
+<p style="text-align:center;margin:0;padding:0;">
+            <a class="skip-to-content-link" href="#maincont">
+        skip to content
+      </a>
+  </p>
+  <button onclick="topFunction()" id="top" title="Go to top"><i class="fa-solid fa-angles-up"></i></button>
+  <address id="toggle-button" class="theme-toggle"><img src="/img/togglesun.png" loading="lazy" id="toggle-img" alt="sun icon"></address>
+
+  <main class="fadeInUp"> 
+    <header style="width: fit-content;margin: 0 auto;"><img src="/img/index/logo.png" style="width: 100%;" alt="Tri4ge"></header>
+    <div class="wrapper" style="width:35rem;">
+        {{ content | safe }}
+    </div>
+  </main>
+
+</body>
+<script src="/js/lightdarktoggle.js"></script>
+<script src="/js/backtotop.js"></script>

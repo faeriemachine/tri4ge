@@ -1,0 +1,116 @@
+---
+title: Home
+layout: base.njk
+---
+<link rel="stylesheet" href="/css/home.css" />
+<script src="/js/freezeframe.min.js"></script>
+
+<div class="headerimg">
+  <img id="target" src="a.jpg">
+  <script src="/js/banner.js"></script>
+</div>
+
+<div class="content">
+  <div class="welcomeflex">
+    <div class="hysondoll">
+        <img class="hyson freezeframe" src="/img/home/hyson.gif" alt="Hyson">
+        <script>
+        new Freezeframe();
+        </script>
+      </div>
+      <div class="txt">
+        <h1 id="welcome">Welcome!</h1>
+        <p>
+          I'm Triage. I'm a self-taught illustrator, costume builder, and web developer from so-called Canada. This is a site I made in order to host all of my creative endeavours, so feel free to take a look around and explore what I have hosted on here! 
+        </p>
+          <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
+          <script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#D12C3A', 'F1F06DCO');kofiwidget2.draw();</script>
+        <p style="margin: 10px;">▸ <a href="mailto:batscanned@gmail.com" target="_blank" rel="noopener noreferrer">Email</a> | <a href="https://t.me/tri4gesicu" target="_blank" rel="noopener noreferrer">Telegram channel</a> | <a href="https://trello.com/b/7Sgj8g0p/tri4ges-commissions" target="_blank" rel="noopener noreferrer">Queue</a> | <a href="https://throne.com/tri4ge" target="_blank" rel="noopener noreferrer">Wishlist</a></p>
+      </div>
+  </div>
+  <hr>
+  <p style="text-align:center;margin: 0;">
+    <strong>Commission status:</strong>
+    <span class="closed"></span>
+  </p>
+</div>
+<div class="box latest">
+  <h2 id="latest-art-pieces">Latest Art Pieces</h2>
+  <hr>
+  <P>gt7y5huijky45tg8ukjnfd</P>
+</div>
+<div class="flexbox">
+    <div class="left">
+      <div class="content" id="updates">
+        <h2 id="recent-updates">Recent Updates</h2>
+        <hr>
+        {% include 'updates25.njk' %}
+        <hr>
+        <a href="/changelog" style="text-align:center;">Full changelog</a>
+      </div>
+      <div class="content" id="links">
+        <h2 id="links-out">Links Out</h2>
+        <hr>
+        <p>
+         Link me!<br>
+          <img class="sitebutton freezeframe" src="/img/tri4gebutton.gif" alt="tri4ge.icu button">
+            <script>
+              new Freezeframe();
+            </script>
+        </p>
+        <textarea style="height: 5rem; width: 13rem;">&lt;a href="https://tri4ge.icu"&gt;&lt;img loading="lazy" src="url" alt="tri4ge.icu button"&gt;&lt;/a&gt;</textarea>
+        <p>
+          <a href="https://fursona.directory/@tri4ge" target="_blank" class="outlink fa-solid fa-link" aria-label="All links"></a>
+          <a href="https://tri4ge.straw.page/" target="_blank" class="outlink fa-solid fa-face-smile" aria-label="StrawPage"></a>
+            <br>
+          <a href="https://twitter.com/tri4ge" target="_blank" class="outlink fa-brands fa-twitter" aria-label="Twitter"></a>
+          <a href="https://bsky.app/profile/tri4ge.icu" target="_blank" class="outlink fa-brands fa-bluesky" aria-label="BlueSky"></a>
+          <a href="https://pawb.fun/@tri4ge" target="_blank" class="outlink fa-brands fa-mastodon" rel="me" aria-label="Mastodon"></a> 
+          <a href="https://tri4ge.tumblr.com/" target="_blank" class="outlink fa-brands fa-tumblr" aria-label="Tumblr"></a>
+          <a href="https://www.instagram.com/tri4ged/" target="_blank" class="outlink fa-brands fa-instagram" aria-label="Instagram"></a>
+          <a href="https://toyhou.se/tri4ge" target="_blank" class="outlink fa-solid fa-house" aria-label="Toyhouse"></a>
+          <a href="https://www.furaffinity.net/user/tri4ge" target="_blank" class="outlink fa-solid fa-paw" aria-label="FurAffinity"></a>
+              <br>
+          <br>
+          <iframe src="https://nekoweb.org/frame/follow" frameborder="0" width="180" height="38"></iframe>
+        </p>
+      </div>
+    </div>
+    <div class="right">
+      <div class="content" id="blogroll">
+        <h2 id="recent-posts">Recent Blog Posts</h2>
+        <hr>
+        {% include '../src/blog/featured.html' %}
+      </div>
+    </div>
+</div>
+<div class="box status">
+  <h2 id="current-status">Current Status</h2>
+  <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=triage" defer></script>
+  <img class="hysonpeek" src="/img/home/hysonpeek.png">
+</div>
+<div class="content act">
+  <h2 id="act-now">Act Now</h2>
+  <hr>
+  <p>Various links to contribute to various liberation causes around the world</p>
+  <h3 id="palestine">Palestine</h3>
+  <ul>
+    <li><a class="linkout" target="_blank" rel="noopener noreferrer" href="https://docs.google.com/spreadsheets/d/1yYkNp5U3ANwILl2MknJi9G7ArY4uVTEEQ1CVfzR8Ioo/edit?gid=0#gid=0">Vetted Gaza Evacuation Fundraiser List</a> - Masterlist of fundraisers for Palestinian families in need, vetted by actual Palestinians</li>
+    <li><a class="linkout" target="_blank" rel="noopener noreferrer" href="https://docs.google.com/spreadsheets/d/1vtMLLOzuc6GpkFySyVtKQOY2j-Vvg0UsChMCFst_WLA/edit?usp=drive_web&amp;ouid=113835288396245592240">Operation Olive Branch</a> - Masterlist of fundraisers for Palestinian families in need</li>
+    <li><a class="linkout" target="_blank" rel="noopener noreferrer" href="https://docs.google.com/spreadsheets/d/1FC1fK-3r-w3wPi2AdYho5_0j148QC6wkFIMdJA5kX4c/htmlview#gid=0">Gaza Evacuation Relief Fund</a> - Fundraisers vetted by Ottawa4Palestine</li>
+    <li><a class="linkout" target="_blank" rel="noopener noreferrer" href="https://docs.google.com/spreadsheets/u/0/d/e/2PACX-1vTKQYInYewFiGUX4afdHK-rANJDT4dgOC4IV6elKYNvYI2HvOTf_6IsTqt5m2KXcr_pGxcqR8AvsAJi/pubhtml?pli=1#">The Butterfly Project</a> - More vetted fundraisers for Palestinians in need</li>
+    <li><a class="linkout" target="_blank" rel="noopener noreferrer" href="https://docs.google.com/spreadsheets/d/1J-1KNHXmvY098fuCDWiOIm1fcphAgkXA8nnWqOSXouw/edit?gid=283092143#gid=283092143">Bees and Watermelons</a> - Even more vetted fundraisers for Palestinians in need</li>
+    <li><a class="linkout" target="_blank" rel="noopener noreferrer" href="https://disabilityvisibilityproject.com/2023/12/25/crips-for-esims-for-gaza/">Crips for eSims for Gaza</a> - Easily donate money that goes towards buying eSims for Gazans</li>
+    <li><a class="linkout" target="_blank" rel="noopener noreferrer" href="https://pcrf1.app.neoncrm.com/forms/2024-ramadan-campaign-1">PCRF</a> - Donate directly to PCRF, this is their Ramadan Campaign</li>
+    <li><a class="linkout" target="_blank" rel="noopener noreferrer" href="https://twitter.com/CareForGaza">CareForGaza</a> - The Twitter page for the Care For Gaza non-profit charity that aims to help needy families in Palestine</li>
+    <li><a class="linkout" target="_blank" rel="noopener noreferrer" href="https://piousprojects.org/discover?country=183">Pious Projects Palestine</a> - A number of fundraiser initiatives you can donate to, providing needy families with everything between food and water, to medical supplies and specialized healthcare.</li>
+    <li><a class="linkout" target="_blank" rel="noopener noreferrer" href="https://www.unrwa.org/">UNRWA</a> - The official website for the UNRWA</li>
+    <li><a class="linkout" target="_blank" rel="noopener noreferrer" href="https://bdsmovement.net/">BDS Movement</a> - The official website for the Boycott, Divest, Sanction movement</li>
+    <li><a class="linkout" target="_blank" rel="noopener noreferrer" href="https://decolonizepalestine.com/">Decolonize Palestine</a> - Some starter material for decolonizing your beliefs on Palestine</li>
+    </ul>
+    <h3 id="sudan">Sudan</h3>
+    <ul>
+      <li><a class="linkout" target="_blank" rel="noopener noreferrer" href="https://www.unicef.org.uk/donate/sudan-appeal/">UNICEF Sudan</a> - Official website for UNICEF&#39;s Sudan relief fund</li>
+      <li><a class="linkout" target="_blank" rel="noopener noreferrer" href="https://www.wfp.org/support-us/stories/sudan">WFP Sudan</a> - Officla website for World Food Programme&#39;s Sudan relief fund, providing emergency food aid to families in need</li>
+    </ul>
+</div>

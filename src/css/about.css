@@ -1,0 +1,148 @@
+#one{
+    width: 35rem;
+    margin: 5px auto 10px;
+}
+
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.boxavi{
+    width: 30%;
+    padding: 10px;
+}
+
+.avi{
+    width: 100%;
+    box-shadow: 0px 0px 5px 1px #35123F;
+    border-radius: 25px;
+}
+
+.boxbio{
+    width: 60%;
+}
+
+ .names{
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 5px;
+ }
+
+.pronouns{
+    font-size: 1.35em;
+    margin: auto 5px;
+}
+
+.boxbio p{
+    font-size: 1.25rem;
+    margin-left: 5px;
+    margin-top: 0em;
+}
+
+.badges{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.codeblock{
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    background-color: var(--light--bg-secondary);
+}
+
+/* Marquee */
+.marqueebox{
+margin: 5px auto;
+padding: 5px;
+background-color: var(--light--bg-secondary);
+border: 3px solid var(--light--bg-secondary);
+color: var(--light--text-secondary);
+text-align: center;
+box-shadow: 1px 1px 5px black;
+}
+
+/* This is what causes the actual smooth scrolling */
+@keyframes scroll-r2l {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Change the '10s' in this to change how fast it scrolls! */
+.scroll-r2l {
+  animation: scroll-r2l 45s linear infinite;
+}
+
+/* Left-to-Right */
+@keyframes scroll-l2r {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.scroll-l2r {
+  animation: scroll-l2r 45s linear infinite;
+}
+
+/* 'Display: Flex' is extremely important to use here so all the items inside the marquee line up correctly, and the duplicated container lines up properly with the original */
+.marquee {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+  box-sizing: unset;
+}
+
+.marquee-items {
+  display: flex;
+  flex-shrink: 0;
+  height: 100%;
+  min-width: 100%;
+  position: relative;
+}
+
+/* Changes to this class will only affect the children
+of the marquee-items, and not all of their descendants.
+Make changes here if you want spaces in-between the
+marquee items or other effects and styles!*/
+.marquee-items > * {
+  margin: 0;
+  height: 31px;
+}
+
+.paused {
+  -webkit-animation-play-state:paused;
+  -moz-animation-play-state:paused;
+  -o-animation-play-state:paused;
+  animation-play-state:paused;
+}
+
+/* Mobile */
+@media only screen and (max-width: 980px) {
+
+  #one {
+    width: auto;
+  }
+
+  .flexbox{
+    flex-direction: column;
+  }
+
+  .boxbio {
+    width: 100%;
+  }
+  
+  .boxavi {
+    width: auto;
+  }
+}

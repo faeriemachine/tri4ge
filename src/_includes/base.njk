@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% include "basehead.njk" %}
+  {% block head %}{% endblock %}
+</head>
+
+<body>
+<p style="text-align:center;margin:0;padding:0;">
+            <a class="skip-to-content-link" href="#maincont">
+        skip to content
+      </a>
+  </p>
+  <button onclick="topFunction()" id="top" title="Go to top"><i class="fa-solid fa-angles-up"></i></button>
+  <address id="toggle-button" class="theme-toggle"><img src="/img/togglesun.png" loading="lazy" id="toggle-img" alt="sun icon"></address>
+  <nav>{% include 'navigation.njk' %}</nav>
+
+  <main class="fadeInUp"> 
+    <div class="wrapper">
+        {{ content | safe }}
+    </div>
+  </main>
+
+  <footer>{% include 'footer.njk' %}</footer>
+</body>
+<script src="/js/lightdarktoggle.js"></script>
+<script src="/js/backtotop.js"></script>

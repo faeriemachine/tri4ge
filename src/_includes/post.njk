@@ -1,0 +1,20 @@
+---
+layout: base.njk
+---
+<div class="content">
+  {% block content %}
+    <article class="post__content">
+    <h1>{{ title }}</h1>
+      <p><i class="far fa-calendar"></i> <time>{{ date |  date }}</time> | {{ content | wordcount }} words</p>
+      <p><i class="fas fa-hashtag"></i>
+        {% for tag in tags %}
+        | <a href="/blog/tag/{{ tag | slugify }}">{{tag}}</a>
+       {% endfor %}
+      </p>
+      <hr>
+      {{ content | safe }}
+    </article>
+ {% endblock %}
+ <hr>
+ <p style="text-align:center;"><a href="/blog">Blog roll</a> | <a href="/index">Home</a></p>
+</div>

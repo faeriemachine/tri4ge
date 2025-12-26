@@ -1,0 +1,19 @@
+{
+  "name": "tri4ge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "eleventy-plugin-wordcount-extended": "^0.2.1",
+    "freezeframe": "^5.0.2",
+    "glightbox": "^3.3.1"
+  }
+}

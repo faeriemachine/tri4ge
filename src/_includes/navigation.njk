@@ -1,0 +1,64 @@
+   <head>
+    <meta charset="utf-8">
+    <!-- <title>Responsive Sidebar Menu</title> -->
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="/css/nav.css" />
+
+  </head>
+  <body>
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+      <header><img class="logo" src="../../../img/image02.png" alt="Tri4ge"></header>
+      <a href="/home/">
+        <i class="fas fa-hospital"></i>
+        <span>Home</span>
+      </a>
+        <button class="dropdown-btn">
+          <span>
+            <i class="fas fa-address-card"></i>
+              <span class="label">About</span> 
+            <i class="fa fa-caret-down"></i>
+          <span>
+        </button>
+        <div class="dropdown-container fadeInLeft">
+          <a href="/about">About the artist</a>
+          <a href="/faq">FAQ</a>
+          <a href="/uses">Uses</a>  
+         </div>
+        <button class="dropdown-btn">
+          <span>
+            <i class="fas fa-image"></i>
+              <span class="label">Gallery</span> 
+            <i class="fa fa-caret-down"></i>
+          <span>
+        </button>
+        <div class="dropdown-container fadeInLeft">
+          <a href="/gallery/2026/">Current Year</a>
+          <a href="/gallery/2024/">Last year</a>
+          <a href="https://tri4ge.carrd.co/">Portfolio</a>
+         </div>
+      <a href="/blog/">
+        <i class="fas fa-feather"></i>
+        <span>Blog</span>
+      </a>
+      <a href="/tos/">
+        <i class="fas fa-file-signature"></i>
+        <span>T.O.S.</span>
+      </a>
+      <a href="/commission/">
+        <i class="fas fa-brush"></i>
+        <span>Commission</span>
+      </a>
+      <a href="/links/">
+        <i class="fas fa-link"></i>
+        <span>Links</span>
+      </a>
+    </div>
+</body>
+<script src="/js/dropdown.js"></script>

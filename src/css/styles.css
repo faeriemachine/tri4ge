@@ -1,0 +1,508 @@
+/* Global variables. */
+:root {
+  /* Set sans-serif & mono fonts */
+  --sans-font: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir,
+    "Nimbus Sans L", Roboto, Noto, "Segoe UI", Arial, Helvetica,
+    "Helvetica Neue", sans-serif;
+  --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+/* Colours */
+  --light--bg-primary: #F5FDE3;
+  --light--border-primary: #FFA500;
+  --light--box-primary: #FEFDB1;
+  --light--bg-secondary: #006262;
+  --light--box-secondary: #004646;
+  --light--text-primary: #006262;
+  --light--text-secondary: #fff;
+  --light--a-primary: #D12C3A;
+  --light--a-hover: #451AA1;
+  --light--h4: #6e116e;
+  --light--faq-active: #fff;
+  --light--comm-closed: #df0c0c;
+  --light--comm-open: #0f7900;
+  --light--img-background: url(/img/backgroundlight.png);
+  --light--div-background: url(/img/bglight.jpg);
+  --dark--bg-primary: #1d2016;
+  --dark--border-primary: #935a00;
+  --dark--box-primary: #131309;
+  --dark--bg-secondary: #003636;
+  --dark--box-secondary: #001d1d;
+  --dark--text-primary: #bff;
+  --dark--text-secondary: #fff;
+  --dark--a-primary: #ff8990;
+  --dark--a-hover: #996afd;
+  --dark--h4: #e269e2;
+  --dark--faq-active: #080807;
+  --dark--comm-closed: #ff5656;
+  --dark--comm-open: #40dd2a;
+  --dark--img-background: url(/img/backgrounddark.png);
+  --dark--div-background: url(/img/bgdark.jpg);
+  --blue: #006262; /* Dark background color */
+  --yellow: #FEFDB1; /* White text color */
+  --orange: #ff9900; /* Color on hover */
+}
+
+.atkinson-hyperlegible-regular {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.atkinson-hyperlegible-bold {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.atkinson-hyperlegible-regular-italic {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.atkinson-hyperlegible-bold-italic {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+*{
+  text-decoration: none;
+}
+
+html {
+  /* Set the font globally */
+  font-family: var(--sans-font);
+  scroll-behavior: smooth;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body {
+  color: var(--text);
+  background-color: var(--light--bg-secondary);
+  background: var(--light--img-background);
+    background-position: center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+  height: 100%;
+  font-family: Atkinson Hyperlegible;
+  font-size: 1.25em;
+  margin: 0;
+  padding: 0;
+  overflow:auto;
+  overflow-x: hidden;
+}
+
+/* Header */
+
+header {
+  text-align: center;
+  padding: 0 0.5rem 2rem 0.5rem;
+  box-sizing: border-box;
+}
+
+/* Main */
+main {
+  padding: 1.5rem;
+}
+
+.wrapper{
+  margin: 0 auto;
+  width: 50rem;
+  background:linear-gradient(0deg, rgba(33, 36, 36, 0.3), rgba(33, 36, 36, 0.3)), var(--light--div-background);
+    background-position: center;
+    background-repeat: repeat;
+  box-shadow: 0px 0px 3px 3px #35123F;
+  padding: 5px;
+  border: 3px double #033642;
+}
+
+.content{
+  margin: 10px;
+  padding: 10px;
+  padding-top: 0px;
+  background-color: var(--light--bg-primary);
+  border: 3px solid var(--light--border-primary);
+  color: var(--light--text-primary);
+  box-shadow: 0px 0px 5px 1px #35123F;
+  border-radius: 0.5rem;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  .content {
+    scrollbar-width: thin;
+    scrollbar-color: var(--light--border-primary) var(--light--bg-primary);
+  }
+
+  /* Chrome, Edge, and Safari */
+  .content::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .content::-webkit-scrollbar-track {
+    background: var(--light--bg-primary);
+  }
+
+  .content::-webkit-scrollbar-thumb {
+    background-color: var(--light--border-primary);
+    border-radius: 10px;
+    border: 3px solid var(--light--bg-primary);
+  }
+
+.box{
+  background-color: var(--light--box-primary);
+  border: 3px solid var(--light--border-primary);
+  color: var(--light--text-primary);
+  margin: 5px;
+  padding: 5px;
+  overflow: auto;
+  overflow-x: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 5px 1px #35123F;
+  scrollbar-width: thin;
+  scrollbar-color: #FFA500 rgba(255, 255, 255, 0)
+}
+
+/* Footer */
+body > footer {
+  margin: 0 auto;
+  background-color: var(--light--box-secondary);
+  color: white;
+  padding: 1rem;
+  margin-top: 1.5rem;
+}
+
+.footerflex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: auto 50px;
+  height: fit-content;
+  gap: 25px;
+}
+
+.footerflexlogo {
+  width: 50%;
+  text-align: right;
+}
+
+.footerflex p{
+  text-align: left;
+  margin: 5px;
+}
+
+footer a{
+  color: white;
+}
+
+footer a:hover{
+  color: var(--orange);
+}
+
+
+/* Format headers */
+h1 {
+  font-size: 2.5rem;
+  font-family: 'Mali';
+  text-align: center;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+h1::before, h1::after {
+  flex: 1;
+  content: '';
+  padding: 3px;
+  background-color: var(--light--border-primary);
+  margin: 5px;
+  border-radius: 5px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: 'Mali';
+  text-align: left;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-family: 'Mali';
+  margin: 10px 0px 10px 25px;
+  text-align: left;
+}
+
+h4 {
+  font-family: Mali;
+  margin-left: 40px;
+}
+
+/* Format dividers */
+hr {
+  display: block;
+  color: var(--light--border-primary);
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 3px;
+} 
+
+/* Format links */
+a{
+  color: var(--light--a-primary);
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Mali';
+}
+
+a:not([href*="https://tri4ge.icu/"]):not([href^="#"]):not([href^="/"]):not(.no-icon)::after {
+  font-family: "Font Awesome 7 Free";
+  font-weight: 900; /* Important for "Solid" icons */
+  content: '\2197'; /* Code for "arrow-up-right-from-square" */
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 0.9em;
+}
+
+.webring-info a:not([href*="https://tri4ge.icu/"]):not([href^="#"]):not([href^="/"]):not(.no-icon)::after {
+  content: none; 
+}
+
+.webring-prev a:not([href*="https://tri4ge.icu/"]):not([href^="#"]):not([href^="/"]):not(.no-icon)::after {
+  content: none; 
+}
+
+.webring-next a:not([href*="https://tri4ge.icu/"]):not([href^="#"]):not([href^="/"]):not(.no-icon)::after {
+  content: none; 
+}
+
+a:hover{
+  color: var(--light--a-hover);
+}
+
+/* Fade Effects */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeInUp {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+p, img, li, span, h1, h2, h3, h4 {
+    animation: fadeInLeft 0.5s ease-out;
+}
+
+/* Light/Dark toggle button */
+.dark {
+  --light--bg-primary: var(--dark--bg-primary);
+  --light--border-primary:var(--dark--border-primary);
+  --light--box-primary: var(--dark--box-primary);
+  --light--bg-secondary: var(--dark--bg-secondary);
+  --light--box-secondary: var(--dark--box-secondary);
+  --light--text-primary: var(--dark--text-primary);
+  --light--text-secondary: var(--dark--text-secondary);
+  --light--a-primary: var(--dark--a-primary);
+  --light--a-hover: var(--dark--a-hover);
+  --light--h4: var(--dark--h4);
+  --light--comm-closed: var(--dark--comm-closed);
+  --light--comm-open: var(--dark--comm-open);
+  --light--img-background: var(--dark--img-background);
+  --light--div-background: var(--dark--div-background);
+}
+
+.button {
+  border: 2px solid var(--light--box-secondary);
+  background-color: var(--light--box-secondary);
+  color: var(--light--bg-primary);
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.button:hover {
+  border-color: var(--light--box-secondary);
+  background-color: var(--light--box-secondary);
+  color: var(--light--bg-primary);
+  text-decoration: none;
+}
+
+.button:active {
+  background-color: #43464d;
+}
+
+.button.secondary {
+  border: 2px solid var(--light--box-secondary);
+  background-color: var(--light--box-secondary);
+  color: var(--light--brand-primary);
+}
+
+.button.secondary:hover {
+  background-color: #43464d;
+  border-color: #43464d;
+  color: var(--light--brand-primary-hover);
+}
+
+
+.theme-toggle {
+  width: 60px;
+  height: 60px;
+  background-color: var(--light--box-secondary);
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 25px;
+  position: fixed;
+  z-index: 6;
+  bottom: 80px;
+  right: 20px;
+}
+
+.theme-toggle:hover {
+  background-color: #43464d;
+}
+
+/* Skip buttons */
+.skip-to-nav-link, .skip-to-content-link {
+  height: 30px;
+  width:100%;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  background-color:var(--light--bg-secondary);
+  color: white;
+}
+
+.skip-to-nav-link {
+  display:none; /* hide unless mobile... */
+}
+
+.skip-to-content-link {
+  top:-1px;
+  left:-1px;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+  position:absolute;
+  z-index: 10;
+}
+
+#top {
+  display: none;
+  position: fixed;
+  top: 70px;
+  right: 15px;
+  z-index: 99;
+  font-size: 1.5em;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: var(--light--box-secondary);
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 25px;
+  transition: all .5s ease;
+}
+
+#top:hover {
+  background-color: #555;
+}
+
+.skip-to-content-link:focus, .skip-to-nav-link:focus {
+  transform: translateY(0%);
+}
+
+/* Grow on hover */
+.grow{
+    transition: all .2s ease;  
+}
+
+.grow:hover{
+    transform: scale(1.5); 
+    z-index: 999;
+    position: relative;
+}
+
+/* Pause on hover */
+#gifs-rows img {
+  cursor: pointer;
+}
+#gifs-rows .gif-file {
+  display:none;
+}
+
+/* Hover to show title */
+.hovertxt {
+  font-weight: bold;
+  border-bottom: 1px dashed var(--light--text-primary);
+  position: relative;
+}
+
+/* Data-title */
+.hovertxt[data-title]:hover:after {
+  content: attr(data-title);
+  position: absolute;
+  top: -150%;
+  left: -25%;
+  z-index: 100;
+  background-color: var(--light--bg-secondary);
+  color: var(--light--text-secondary);
+  width: 10rem;
+  font-size: 0.7em;
+  font-family: 'Mali';
+  padding: 10px;
+  border-radius: 15px;
+  animation: fadeInUp 0.25s ease-out;
+}
+
+/* Mobile */
+@media only screen and (max-width: 980px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2.1rem;
+  }
+
+  .wrapper{
+    width: 98%;
+  }
+  
+  .footerflex{
+  height: auto;
+  gap: initial;
+  }
+
+  .footerflexlogo {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footerflextext{
+    line-height: initial;
+  }
+}
