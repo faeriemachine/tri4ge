@@ -3,12 +3,6 @@
     margin: 5px auto 10px;
 }
 
-.flexbox{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
 .boxavi{
     width: 30%;
     padding: 10px;
@@ -133,11 +127,7 @@ marquee items or other effects and styles!*/
   #one {
     width: auto;
   }
-
-  .flexbox{
-    flex-direction: column;
-  }
-
+  
   .boxbio {
     width: 100%;
   }

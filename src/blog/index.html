@@ -2,10 +2,19 @@
 title: Blog
 layout: base.njk
 ---
+<link rel="stylesheet" href="/css/blog.css" />
+
 <div class="content">
   <h1 id="all-blog-posts">All Blog Posts</h1>
-  <p>Welcome to my blog! This is a place for me to put my thoughts regarding anything related to art and illustration, furry culture, convention reviews, web development, and possibly more. Stick around to see what I post!</p>
-  <p><strong>Warning:</strong> There may be triggering or upsetting content present in my blog posts. All posts containg this kind of content will have content warnings at the beginning, with a description of what you can expect from it.</p>
+  <div class="flexbox">
+    <div class="blogdesc">
+      <p>Welcome to my blog! This is a place for me to put my thoughts regarding anything related to art and illustration, furry culture, convention reviews, web development, and possibly more. Stick around to see what I post!</p>
+      <p><strong>Warning:</strong> There may be triggering or upsetting content present in my blog posts. All posts containg this kind of content will have content warnings at the beginning, with a description of what you can expect from it.</p>
+    </div>
+    <div class="hysonfloat">
+      <img class="hysonimg" src="/img/blog/hysontype.PNG" alt="Hyson coding on a laptop">
+    </div>
+  </div>
   <hr>
   {% for post in collections.posts | reverse %}
   <h2><a href="{{post.url}}">{{ post.data.title }}</a></h2>

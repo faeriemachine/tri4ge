@@ -151,6 +151,12 @@ main {
     border: 3px solid var(--light--bg-primary);
   }
 
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
 .box{
   background-color: var(--light--box-primary);
   border: 3px solid var(--light--border-primary);
@@ -486,6 +492,10 @@ p, img, li, span, h1, h2, h3, h4 {
 
   h2 {
     font-size: 2.1rem;
+  }
+
+  .flexbox{
+    flex-direction: column;
   }
 
   .wrapper{
