@@ -4,76 +4,91 @@
     Setting CSS that breaks main nekoweb site on purpose is prohibited and may result in ban and site deletion! 
 */
 
-/* Must start with ".site-box". Change how your website will appear on main nekoweb site: https://lune.dimden.dev/405a44b7e5.png */
-#site-tri4ge.site-box {
-    text-align: center;
-    background-image: url('https://tri4ge.icu/img/bglight.jpg'); /* Only nekoweb URLs allowed, use full url to your site like https://example.nekoweb.org/images/coolbg.png */
-    background-repeat: repeat;
-    color: #b08271;
-    font-size: 12px;
-    box-shadow: 5px 5px 3px 1px #35123F;
-    border: 3px double #033642;
-    transition: all .2s ease;  
+/* Must start with ".site-box". Change how your website will appear on main nekoweb site: https://nekoweb.org/assets/siteboxes.png */
+#site-tri4ge-icu.site-box {
+  text-align: center;
+  background-image: url(https://tri4ge.nekoweb.org/img/presitebg.jpg); /* Only your-username.nekoweb.org URLs allowed, use FULL url to your file like https://your-username.nekoweb.org/your-username.nekoweb.org/bg.png */
+  background-repeat: repeat;
+  color: #b08271;
+  font-size: 12px;
+  box-shadow: 1px 1px 5px 2px #35123f;
+  border: 3px double #033642;
+  transition: all 0.2s ease;
 }
 
-#site-tri4ge.site-box:hover {
-  transform: scale(1.1); 
+#site-tri4ge-icu.site-box:hover {
+  transform: scale(1.1);
 }
 
-#site-tri4ge.site-box .sitefeature{
+#site-tri4ge-icu.site-box .sitefeature {
   background: transparent;
   border: none;
 }
 
-#site-tri4ge.site-box .screenshot{
-    border: 2px solid #006262;
-    border-radius: 25px;
-}
-  
-#site-tri4ge.site-box > a > p {
-    color: #FEFDB1;
-    background-color: #006262;
-    font-weight: bold;
-    border-radius: 25px;
-    width: 40%;
-    margin: 0 auto;
-    top: 8px;
+#site-tri4ge-icu.site-box .screenshot {
+  border: 2px solid #006262;
+  border-radius: 25px;
 }
 
-#site-tri4ge.site-box > a > span {
-   display: none;
+#site-tri4ge-icu.site-box > a > p {
+  color: #fff;
+  background-color: #006262;
+  font-weight: bold;
+  border-radius: 25px;
+  width: 40%;
+  margin: 0 auto;
+  top: 8px;
 }
 
-#site-tri4ge.site-box::after {
+#site-tri4ge-icu.site-box > a > span {
+  display: none;
+}
+
+#site-tri4ge-icu.site-box::after {
   display: block;
   height: 100px;
   width: auto;
-  content: url('https://tri4ge.icu/img/presitelogo.png');
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
   margin-left: -200px;
   top: -200px;
-  transition: transform .5s ease;
+  transition: transform 0.5s ease;
 }
 
 /* Style for your 'Follow on Nekoweb' button (<iframe src="https://nekoweb.org/frame/follow" frameborder="0" width="170" height="28"></iframe>) */
 .follow {
-  background-color: #D12C3A;
+  background-color: #d12c3a;
   border: 0;
   border-radius: 25px;
   color: #fff;
   padding: 5px 10px;
   cursor: pointer;
-  font-family: 'Mali';
   font-weight: bold;
   font-size: 15px;
   margin: 0 auto;
   display: block;
-  transition: all .2s ease; 
+  transition: all 0.2s ease;
 }
 
-.follow:hover{
-  transform: scale(1.1); 
-  color: #451AA1;
+.follow:hover {
+  transform: scale(1.1);
+  color: #451aa1;
+}
+
+/* Style for your post box (must start with ".post-box") */
+.post-box {
+  background-color: #fff2cc;
+  border: 4px solid #ecbfa6;
+  padding: 15px;
+  border-radius: 5px;
+  color: #634c53;
+  font-weight: normal;
+}
+
+.post-box .post-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
