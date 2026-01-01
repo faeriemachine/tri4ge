@@ -365,6 +365,21 @@ p, img, li, span, h1, h2, h3, h4 {
     animation: fadeInLeft 0.5s ease-out;
 }
 
+/* Animations */
+.rotation {
+  display: inline-block;
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /* Light/Dark toggle button */
 .dark {
   --light--bg-primary: var(--dark--bg-primary);
