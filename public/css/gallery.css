@@ -1,0 +1,19 @@
+h4 {
+  margin-left: 0;
+}
+
+.welcome {
+    text-align:center;
+}
+
+.thumbnail {
+    width: 24%;
+}
+
+/* Mobile */
+@media only screen and (max-width: 980px) {
+  
+  .thumbnail {
+    width: 40%;
+  }
+}

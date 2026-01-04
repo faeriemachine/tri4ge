@@ -1,0 +1,25 @@
+.blogdesc{
+    width: 70%;
+}
+
+.hysonfloat{
+    width: 30%;
+}
+
+.hysonimg{
+    width: 100%;
+}
+
+/* Mobile */
+@media only screen and (max-width: 980px) {
+  
+  .blogdesc {
+    order: 2;
+    width: 100%;
+  }
+  
+  .hysonfloat {
+    order: 1;
+    width: auto;
+  }
+}
