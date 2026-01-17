@@ -54,6 +54,11 @@ h2 {
     text-align: center;
 }
 
+textarea{
+    height: 5rem; 
+    width: 13rem;
+}
+
 .status{
     height: fit-content;
     position: relative;
@@ -74,13 +79,6 @@ h2 {
 }
 #statuscafe-content {
     margin: 0 8em 0.5em 1em;
-}
-
-.hysonpeek{
-    position: absolute;
-    width: auto;
-    right: 20px;
-    bottom: 0px;
 }
 
 .act{
@@ -105,6 +103,13 @@ h2 {
 /* Img elements */
 #target{
   border: 1px solid black;
+}
+
+.hysonpeek{
+    position: absolute;
+    width: auto;
+    right: 20px;
+    bottom: 0px;
 }
 
 .hyson{
@@ -152,6 +157,11 @@ h2 {
     width: 100%;
   }
 
+  textarea{
+    height: auto;
+    width: auto;
+  }
+  
   .hysondoll {
     width: auto;
     padding: 5px;
