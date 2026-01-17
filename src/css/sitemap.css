@@ -1,3 +1,13 @@
 .left, .middle, .right {
     width: 32%;
 }
+
+
+/* Media query */
+@media only screen and (max-width: 960px) {
+
+    .left, .middle, .right{
+        width: auto;
+    }
+
+}

@@ -1,7 +1,20 @@
 .left, .middle, .right {
-    width: 32%;
+    width: 30%;
+    margin: 10px;
 }
 
+h2{
+    text-align: center;
+}
+
+.p1 {
+  margin: 6px;
+  text-align: left;
+}
+
+.p2 {
+  text-align: left;
+}
 
 /* Media query */
 @media only screen and (max-width: 960px) {
