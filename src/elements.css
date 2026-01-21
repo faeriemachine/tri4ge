@@ -46,14 +46,16 @@
 
 #site-tri4ge-icu.site-box::after {
   content: url(//tri4ge.nekoweb.org/img/presitehyson.png);
-  display: block;
-  height: 100px;
-  width: auto;
   position: absolute;
-  left: -40px;
-  bottom: 58px;
+  left: -55px;
+  bottom: -35px;
   transition: transform 0.5s ease;
 }
+
+#site-tri4ge-icu.site-box:hover::after {
+  transform: scale(1.1) rotate(-15deg);
+}
+
 
 /* Style for your 'Follow on Nekoweb' button (<iframe src="https://nekoweb.org/frame/follow" frameborder="0" width="170" height="28"></iframe>) */
 .follow {
