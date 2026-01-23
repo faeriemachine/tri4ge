@@ -247,6 +247,19 @@ h4 {
   margin-left: 40px;
 }
 
+/* Commission status span */
+.closed::after{
+    content: 'Closed';
+    color: var(--light--comm-closed);
+    font-weight: bold;
+}
+
+.open::after{
+    content: 'Open';
+    color: var(--light--comm-open);
+    font-weight: bold;
+}
+
 /* Format dividers */
 hr {
   display: block;
@@ -265,7 +278,6 @@ hr {
   background-color: #00aaaa;
   color:black;
 }
-
 
 /* Format links */
 a{

@@ -87,19 +87,6 @@ textarea{
     overflow-x: hidden;
 }
 
-/* Status span */
-.closed::after{
-    content: 'Closed';
-    color: var(--light--comm-closed);
-    font-weight: bold;
-}
-
-.open::after{
-    content: 'Open';
-    color: var(--light--comm-open);
-    font-weight: bold;
-}
-
 /* Img elements */
 #target{
   border: 1px solid black;
