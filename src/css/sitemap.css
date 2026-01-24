@@ -2,6 +2,18 @@
     width: 32%;
 }
 
+.hysonmap{
+    width: 60%;
+}
+
+.links, .img{
+    width: 50%;
+}
+
+.img{
+    text-align: center;
+}
+
 
 /* Media query */
 @media only screen and (max-width: 960px) {
