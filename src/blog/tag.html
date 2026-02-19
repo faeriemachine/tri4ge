@@ -18,9 +18,9 @@ eleventyComputed:
 <p class="date">
   <i class="far fa-calendar"></i> {{ post.data.date | date }} 
 <p>
-  <i class="fas fa-hashtag"></i>
+  <i class="fas fa-tag"></i>
   {% for tag in post.data.tags %}
-   | <a href="/blog/tag/{{ tag | slugify }}">{{ tag }}</a>
+   | <a href="/blog/tag/{{ tag | slugify }}">#{{ tag }}</a>
  {% endfor %}
  
 </p>

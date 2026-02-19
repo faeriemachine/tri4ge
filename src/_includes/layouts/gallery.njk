@@ -32,7 +32,7 @@ permalink: "/gallery/"
 <i class="fa-solid fa-tag"></i>
         {% for tag in tags | exclude("gallery") %}
         <li class="tags">
-            <a href="/gallery/tagged/{{ tag | slugify }}" class="tags" >#{{ tag }} </a>
+        |    <a href="/gallery/tagged/{{ tag | slugify }}" class="tags" >#{{ tag }} </a>
         </li>
         {% endfor %}
     </ul>
