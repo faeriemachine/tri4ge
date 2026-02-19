@@ -37,7 +37,11 @@ layout: base.njk
 <div class="box latest">
   <h2 id="latest-art-pieces">Latest Art Pieces</h2>
   <hr>
-  <P>gt7y5huijky45tg8ukjnfd</P>
+  <P>
+    {% for post in collections[2026] | reverse %}
+        <a href="{{ post.url }}"><img src="/img/gallery/thumbnails/{{ post.data.thumbnail }}" loading="lazy" /></a>
+        {% endfor %}
+  </P>
 </div>
 <div class="flexbox">
     <div class="left">
