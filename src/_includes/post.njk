@@ -7,7 +7,7 @@ layout: base.njk
     <h1>{{ title }}</h1>
       <p><i class="far fa-calendar"></i> <time>{{ date |  date }}</time> | {{ content | wordcount }} words</p>
       <p><i class="fas fa-tag"></i>
-        {% for tag in tags %}
+        {% for tag in tags | exclude("blog") %}
         | <a href="/blog/tag/{{ tag | slugify }}">#{{tag}}</a>
        {% endfor %}
       </p>
