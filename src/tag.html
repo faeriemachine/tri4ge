@@ -1,0 +1,26 @@
+---
+pagination:
+    data: collections
+    size: 1
+    alias: tag
+    addAllPagesToCollections: true
+    filter:
+        - art
+layout: base.njk
+permalink: "/gallery/tagged/{{ tag | slugify }}/index.html"
+eleventyComputed:
+    title: Art tagged with "{{ tag }}"
+---
+<div class="content">
+    <h1 id="gallery">{{ title }}</h1>
+    <p>View all art pieces tagged with "{{ tag }}"</p>
+</div>
+<div class="box">
+    <!-- Where images go -->
+    <div class="gallery">
+        <!-- Images displayed here -->
+        {% for post in collections[tag] | reverse %}
+        <a href="{{ post.url }}"><img src="/img/gallery/thumbnails/{{ post.data.thumbnail }}" loading="lazy" /></a>
+        {% endfor %}
+    </div>
+</div>
