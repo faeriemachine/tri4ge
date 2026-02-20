@@ -1,3 +1,37 @@
 .welcome{
     text-align: center;
 }
+
+.examples{
+    text-align: center;
+}
+
+.example{
+    width:24%;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 5px 1px #35123F;
+    transition: all .2s ease; 
+}
+
+.example:hover{
+    transform: scale(1.1); 
+}
+
+.flexbox{
+    align-items: center;
+}
+
+.left, .right{
+    width: 48%;
+    text-align: left;
+    margin: 6px;
+}
+
+/* Mobile */
+@media only screen and (max-width: 980px) {
+
+    .example{
+        width: 45%;
+    }
+
+}
