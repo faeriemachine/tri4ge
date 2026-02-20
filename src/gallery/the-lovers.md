@@ -3,7 +3,7 @@ title: The Lovers
 thumbnail: 2026-01-16.jpg
 date: 2026-01-16
 permalink: "/gallery/2026/{{page.fileSlug}}.html"
-tags: ["2026", "angel kitty", "angel puppy", "traditional"]
+tags: ["2026", "angel kitty", "angel puppy", "traditional", "coloured pencils"]
 ---
 
 ![ALT TEXT](/img/gallery/2026-01-16.PNG)

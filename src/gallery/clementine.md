@@ -1,9 +1,9 @@
 ---
-title: Clementine Study
+title: Clementine
 thumbnail: 2026-01-05.jpg
 date: 2026-01-05
 permalink: "/gallery/2026/{{page.fileSlug}}.html"
-tags: ["2026", "study", "traditional"]
+tags: ["2026", "study", "sketch", "traditional", "oil pastels"]
 ---
 
 ![ALT TEXT](/img/gallery/2026-01-05.jpg)
