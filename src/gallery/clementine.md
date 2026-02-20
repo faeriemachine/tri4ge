@@ -3,6 +3,7 @@ title: Clementine
 thumbnail: 2026-01-05.jpg
 date: 2026-01-05
 permalink: "/gallery/2026/{{page.fileSlug}}.html"
+pagetype: artwork
 tags: ["2026", "study", "sketch", "traditional", "oil pastels"]
 ---
 

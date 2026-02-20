@@ -6,20 +6,34 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/assets");
   eleventyConfig.addFilter("date", require("./src/filters/date.js"));
   
-  eleventyConfig.addCollection('posts', function(collectionApi) {
+  eleventyConfig.addCollection('blogpost', function(collectionApi) {
     return collectionApi.getFilteredByGlob('src/blog/posts/**/*.md');
 
   });
 
-    eleventyConfig.addCollection('gallery', function(collectionApi) {
+    eleventyConfig.addCollection('artpost', function(collectionApi) {
     return collectionApi.getFilteredByGlob('src/gallery/**/*.md');
 
+  });
+
+  // Category Global Data //
+    eleventyConfig.addGlobalData("categoryConfig", {
+    gallery: {
+      items: "artpost",
+      tags: "artTags",
+      base: "/gallery"
+    },
+    blog: {
+      items: "blogpost",
+      tags: "blogTags",
+      base: "/blog/posts"
+    },
   });
 
   // Exclude certain tags from displaying
     eleventyConfig.addFilter("exclude", (arr, exclude) => arr.filter((el) => el !== exclude));
     eleventyConfig.addFilter("limit", (arr, limit) => arr.slice(0, limit));
-    eleventyConfig.addCollection("tagList", (collections) => {
+    eleventyConfig.addCollection("tagsList", (collections) => {
         const tags = collections
             .getAll()
             .reduce((tags, item) => tags.concat(item.data.tags), [])
@@ -30,12 +44,69 @@ module.exports = function (eleventyConfig) {
             count: collections.getFilteredByTag(tag).length
         }));
     });
-    eleventyConfig.addFilter("findTagCount", (tagList, findTag) => tagList.find(({ tag }) => tag === findTag)?.count);
+    eleventyConfig.addFilter("findTagCount", (tagsList, findTag) => tagList.find(({ tag }) => tag === findTag)?.count);
+
+  // createTagCollection //
+  function createTagCollection(collectionApi, glob) {
+  const tagSet = new Set();
+
+  collectionApi.getFilteredByGlob(glob).forEach(item => {
+    if (item.data.tags) {
+      let tags = item.data.tags;
+      if (typeof tags === "string") tags = [tags];
+      tags.forEach(tag => tagSet.add(tag));
+    }
+  });
+
+  return [...tagSet].sort((a, b) =>
+    a.localeCompare(b, undefined, { sensitivity: "base" })
+  );
+}
     
-  const wordcountPlugin = require("eleventy-plugin-wordcount-extended");
-  module.exports = function (eleventyConfig) {
-    eleventyConfig.addPlugin(wordcountPlugin);
-  };
+  // Individual tags //
+    // Art Collection //
+  eleventyConfig.addCollection("artTags", collectionApi => {
+    return createTagCollection(
+      collectionApi,
+      "src/gallery/**/*.md"
+    );
+  });
+    
+    // Blog Collection //
+  eleventyConfig.addCollection("blogTags", collectionApi => {
+    return createTagCollection(
+      collectionApi,
+      "src/blog/posts/**/*.md"
+    );
+  });
+  
+    // Global tags //
+  eleventyConfig.addCollection("tagList", function (collectionApi) {
+    const tagSet = new Set();
+
+    collectionApi.getAll().forEach(item => {
+      if ("tags" in item.data) {
+        let tags = item.data.tags;
+        if (typeof tags === "string") tags = [tags];
+        tags.forEach(tag => tagSet.add(tag));
+      }
+    });
+
+    return [...tagSet].sort();
+  });
+
+  // FilterByTag //
+  eleventyConfig.addFilter("filterByTag", (items, tag) => {
+  return items.filter(item =>
+    Array.isArray(item.data.tags) &&
+    item.data.tags.includes(tag)
+  );
+});
+
+   // Word count //  
+const wordcountPlugin = require("eleventy-plugin-wordcount-extended");
+eleventyConfig.addPlugin(wordcountPlugin);
+  
   
     return {
       passthroughFileCopy: true,

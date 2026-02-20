@@ -3,6 +3,7 @@ title: Hyson Reference 2026
 thumbnail: 2026-01-01.jpg
 date: 2026-01-01
 permalink: "/gallery/2026/{{page.fileSlug}}.html"
+pagetype: artwork
 tags: ["2026", "hyson", "reference", "character design", "digital"]
 ---
 

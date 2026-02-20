@@ -31,11 +31,38 @@ h2 {
 }
 
 .latest{
-    height: fit-content;
-    overflow: scroll;
-    overflow-x: scroll;
+    height: 265px;
     text-align: center;
 }
+
+.artwork{
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    overflow-x: scroll;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  .artwork {
+    scrollbar-width:auto;
+    scrollbar-color: var(--light--border-primary) var(--light--bg-primary);
+  }
+
+  /* Chrome, Edge, and Safari */
+  .artwork::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .artwork::-webkit-scrollbar-track {
+    background: var(--light--bg-primary);
+  }
+
+  .artwork::-webkit-scrollbar-thumb {
+    background-color: var(--light--border-primary);
+    border-radius: 10px;
+    border: 8px solid var(--light--bg-primary);
+  }
 
 .latest img { 
   border-radius: 0.5rem;

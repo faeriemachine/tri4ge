@@ -3,6 +3,7 @@ title: Service Plane
 thumbnail: 2026-01-09.jpg
 date: 2026-01-09
 permalink: "/gallery/2026/{{page.fileSlug}}.html"
+pagetype: artwork
 tags: ["2026", "sketch", "digital"]
 ---
 
