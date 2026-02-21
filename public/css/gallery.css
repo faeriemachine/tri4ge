@@ -52,7 +52,6 @@ li::before {
 #next, #back, #previous{
   text-align: center;
   width: 50%;
-<<<<<<< HEAD
 }
 
 .tagsbox{
@@ -68,7 +67,6 @@ details > summary {
     border-radius: 10px;
     margin-bottom: 5px;
     cursor: pointer;
-    font-family: 'Mali';
 }
 
 details > ul {
@@ -81,6 +79,4 @@ details > ul {
 details > li {
   display: inline;
   margin-top: 5px;
-=======
->>>>>>> parent of f9348ff (Add search by tag navigation)
 }
