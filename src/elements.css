@@ -4,8 +4,6 @@
     Setting CSS that breaks main nekoweb site on purpose is prohibited and may result in ban and site deletion! 
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-
 /* Must start with ".site-box". Change how your website will appear on main nekoweb site: https://nekoweb.org/assets/siteboxes.png */
 #site-tri4ge-icu.site-box {
   text-align: center;
@@ -67,7 +65,6 @@
   color: #fff;
   padding: 5px 10px;
   cursor: pointer;
-  font-family: 'Mali';
   font-weight: bold;
   font-size: 15px;
   margin: 0 auto;
@@ -77,7 +74,7 @@
 
 .follow:hover {
   transform: scale(1.1);
-  background-color: #451aa1;
+  color: #451aa1;
 }
 
 /* Style for your post box (must start with ".post-box") */

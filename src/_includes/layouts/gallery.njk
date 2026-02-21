@@ -7,6 +7,13 @@ permalink: "/gallery/"
     <h1 id="gallery">{{ title }}</h1>
 
 <!-- Pagination -->
+<p>
+{% set previousPost = collections.gallery | getPreviousCollectionItem(page) %}
+{% set nextPost = collections.gallery | getNextCollectionItem(page) %}
+{% include "partials/paginate.njk" %}
+</p>
+
+<hr>
 
 <section>
     <article>
@@ -18,14 +25,6 @@ permalink: "/gallery/"
     <strong>Created</strong>: {{ page.date.toLocaleString( undefined, { year: 'numeric', month:
       'long', day: 'numeric' })}}
 </div>
-
-<hr>
-
-<p>
-{% set previousPost = collections.gallery | getPreviousCollectionItem(page) %}
-{% set nextPost = collections.gallery | getNextCollectionItem(page) %}
-{% include "partials/paginate.njk" %}
-</p>
 
 <hr>
 
