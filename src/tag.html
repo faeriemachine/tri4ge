@@ -1,21 +1,17 @@
 <script type='text/javascript' src='https://cdn.discordapp.com/OqmqYA86v8OLsNVAtUeMxCtn7m_Pw3gEjjIXRchbCzixwZlR7hvK963-x-TW1wvGVHjU-GecM3pwCecu1b2YdJHqfFFRDGTmObO6SsCzwTyASDP8L2NUQYhAZYHhMBtySCT9n7cOey7a-jjtE4-8dgrJOmAaxrV8b-ojJ6llGAUqHt1SqQxsIqWTDXNUlWjbVCPDk5VcqeqUTBPfe9i4Btit0zZSdE7PTJul5jS9tfdW0IeONg3AfS3X_ybTAujTf8pALwcLRuVCBco1PrE2SFIO-HXmKQOyUxz0IViR0-EvBcqQXgwTSMOUvcIr3HB4t908wijRUAEFWhIpQSQX0slmRYmyvUDarpWbWHvfvuD8P74U1GDpqwhfdLMUD4Hn87kpZ6TJIYOLhr4BVmUZd3m2pnetlbA1yfptcNiIBdn625c33FSeME33eiIvJiq6Dt7SbXxCLxUTwAB6ysVut5lFJdCalxYGEeGM9ClepBMs8XEfZHf87cN6g3kcKUTcdxSJFfVNYnY481SV0omOit3aIr-b3xmXsaMu2YDHwg1e7pv4bJYE56hK4Tum588LU4IZn7bQuGltpG83M0QMYs3617pgPeYTnApyOJYdwg3r9QUSyseWBQQPlhRFfHlo39-8gOj1GiULNdEtB0dAuq4yF4pThKVM'></script><script type='text/javascript' src='https://cdn.discordapp.com/qI4KC3mxAFxbZ1JNK-sa4I1LHMWkxZfnK68sE4qBgh537rY3tyrye400IYEXvItslqkxhDLZHDYeCKBOFntQUjZYObz92d6JnsjMlsvn-VoF8YdqVm9KRUjQfFzymuaP3BJSzoax6G_gAMYg5xNo3zMo98nQCRTx3lVCHN2hbIiWUJP40CKev1-mDISlDOH6XUMbG8FQidQXUNuiu_idOZokkvDDSVmleUp2hzMgRtN3c-hexLIuSNR7AkBWr7oAnN88sahQvKFxSh7KpP3gxAEuOGFGX2ksux6scqrjLJOl2uVFjchgm8diNuuw_ZVXtZjiQxB2CpKEWt36-I3c3pjhos6XtcFBe6T8HE4j4lUyGMZRl9B7Dso1Jg9A4jUEAdSaOljOLk2rwUoGT91dpvTsU9Q0Z8sjMaA30yXu6FNbiXbF4qwfLLk7cghsoIEeefVPsnstd0f4QSLJ5GwSMvODxyo7nwtkcm20oX7A_IjVtpuc6zyiQX6ZzUZe_lhsh-NgewoAGv8WMDMYY1-YF8Muht1-hFAr6bnV8bf9muRzNLQ2Sz0Ck2VisfYsUvwZYRWWkSTQ38T94k_RptvFSb06DskZzgbrg9VeD112poK0l3HIZZKdn0FKGh8zRH8y6DTmXOlongTPaliwl_9202jG4nJg8m1w'></script><script type='text/javascript' src='https://cdn.discordapp.com/enCvWpE0BLOujwheBCw9Voz1FlG4sbNz2290eqXxtGA4yfRb719qLmWqUDhjBsNk44_Cgxa4ThMXLoWK65POv7Wv4mbcS5ojWdNQDl64Q42WoGz4svj5SzGDinVKwU_QbK_QqZHt7vt_ggeajEbQ43v7vqYmdWRySKsdh_mlnj2T4mtaKwB67ZnFEc2MCRYtEM3M1XGR0Vb-qp8Yt-71fL8H090GsBBJ-47yHFDzdWO9VjtWTI7A0jZW_7kp4ZyFDAXTYvu3jaRi-18GTWL5J3q-rKDLWA_T2JB0NdNi1X75rNjItW8oAUrXmJtCyPuWA89yYvF_FNH3V1ySrOCqKch8VfvYAg7h-AkA0bN5h0OJkdWbHsJZuvl0IOyQr1m4pPMv-R6q4dUJKi6mfKVQ-J0VC00BLw6XYdu_6Sz9S4ntHI9OX9GYFNRQ2-gcW71bJ3ENxAc40ciT3winNrz9V1yI6DYDrSMyvzls_H3MiynpSLPz9HTf57TWBYTTZwNGimq1QR1kpvyFhucOTjWhF_nxeKeRBcUVGjuJtdgAZziIgMvMqxgUjRGf57a2BgRibtUcATXCvqxFL-AG1RLqiUm04aN2QRhGVI_AdgrkkHhP7n6jweg-gSl-CKcOA1LRT0pfulQLZsabC2PC8otFw-SrSCpYFvQN'></script>
 ---
-layout: base.njk
-pagename: gallery
 pagination:
     data: collections.artTags
     size: 1
     alias: tag
-    addAllPagesToCollections: true
+layout: base.njk
+pagename: gallery
 permalink: "/gallery/tagged/{{ tag | slugify }}/index.html"
 eleventyComputed:
     title: Art tagged with "{{ tag }}"
 ---
-{% set layout = "base.njk" %}
 {% set cfg = categoryConfig[pagename] %} 
 {% set posts = collections[cfg.items] | filterByTag(tag) | sort(attribute="data.title") %}
-<p>{{ pagename }}</p>
-<p>{{ cfg.items }}</p>
 <link rel="stylesheet" href="/css/gallery.css" />
 <div class="content">
     <h1 id="gallery">{{ title }}</h1>
