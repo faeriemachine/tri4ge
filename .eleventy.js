@@ -7,13 +7,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("date", require("./src/filters/date.js"));
   
   eleventyConfig.addCollection('blogpost', function(collectionApi) {
-    return collectionApi.getFilteredByGlob('src/blog/posts/**/*.md');
-
+    return collectionApi.getFilteredByGlob('blog/posts/**/*.md');
   });
 
-    eleventyConfig.addCollection('artpost', function(collectionApi) {
-    return collectionApi.getFilteredByGlob('src/gallery/**/*.md');
-
+  eleventyConfig.addCollection('artpost', function(collectionApi) {
+    return collectionApi.getFilteredByGlob('gallery/**/*.md');
   });
 
   // Category Global Data //
@@ -44,7 +42,7 @@ module.exports = function (eleventyConfig) {
             count: collections.getFilteredByTag(tag).length
         }));
     });
-    eleventyConfig.addFilter("findTagCount", (tagsList, findTag) => tagList.find(({ tag }) => tag === findTag)?.count);
+    eleventyConfig.addFilter("findTagCount", (tagsList, findTag) => tagsList.find(({ tag }) => tag === findTag)?.count);
 
   // createTagCollection //
   function createTagCollection(collectionApi, glob) {
@@ -68,7 +66,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("artTags", collectionApi => {
     return createTagCollection(
       collectionApi,
-      "src/gallery/**/*.md"
+      "gallery/**/*.md"
     );
   });
     
@@ -76,7 +74,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("blogTags", collectionApi => {
     return createTagCollection(
       collectionApi,
-      "src/blog/posts/**/*.md"
+      "blog/posts/**/*.md"
     );
   });
   
@@ -97,6 +95,7 @@ module.exports = function (eleventyConfig) {
 
   // FilterByTag //
   eleventyConfig.addFilter("filterByTag", (items, tag) => {
+  if (!Array.isArray(items)) return [];
   return items.filter(item =>
     Array.isArray(item.data.tags) &&
     item.data.tags.includes(tag)

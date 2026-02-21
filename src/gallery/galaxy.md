@@ -3,7 +3,7 @@ title: I Wish To See The Galaxy
 thumbnail: 2026-01-08.jpg
 date: 2026-01-08
 permalink: "/gallery/2026/{{page.fileSlug}}.html"
-pagetype: artwork
+pagetype: gallery
 tags: ["2026", "pumpkin", "painting", "digital"]
 ---
 

@@ -3,7 +3,7 @@ title: Banana Study
 thumbnail: 2026-01-13.jpg
 date: 2026-01-13
 permalink: "/gallery/2026/{{page.fileSlug}}.html"
-pagetype: artwork
+pagetype: gallery
 tags: ["2026", "study", "study", "traditional", "oil pastels"]
 ---
 

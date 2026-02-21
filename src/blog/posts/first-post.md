@@ -3,7 +3,7 @@ layout: post.njk
 title: Baby's First Blog Post
 description: My first blog post on this site! Detailing a bit about how the site was made, and some future plans for it.
 date: 2026-02-13
-pagetype: blogpost
+pagetype: blog
 author: Kian Quinn
 tags:
   - 2026
