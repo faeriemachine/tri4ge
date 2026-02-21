@@ -46,22 +46,22 @@ h2 {
   /* Firefox */
   .artwork {
     scrollbar-width:auto;
-    scrollbar-color: var(--light--border-primary) var(--light--bg-primary);
+    scrollbar-color: var(--light--border-primary) var(--light--box-primary);
   }
 
   /* Chrome, Edge, and Safari */
   .artwork::-webkit-scrollbar {
-    width: 8px;
+    width: 5px;
   }
 
   .artwork::-webkit-scrollbar-track {
-    background: var(--light--bg-primary);
+    background: var(--light--box-primaryy);
   }
 
   .artwork::-webkit-scrollbar-thumb {
     background-color: var(--light--border-primary);
     border-radius: 10px;
-    border: 8px solid var(--light--bg-primary);
+    border: 5px solid var(--light--box-primary);
   }
 
 .latest img { 
