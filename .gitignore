@@ -4,8 +4,6 @@ node_modules
 
 # build artefacts
 
-public.zip
-
 .cache/
 
 .env
