@@ -1,26 +1,14 @@
 ---
 pagination:
-  data: collections
-  size: 1
-  alias: tag
-  addAllPagesToCollections: true
-  filter:
-      - 2026
-      - 2025
-      - gallery
-      - digital
-      - traditional
-      - reference
-      - character design
-      - study
-      - hyson
-      - treehouse
+    data: collections
+    size: 1
+    alias: tag
+    addAllPagesToCollections: true
 layout: base.njk
-permalink: /blog/tag/{{ tag | slugify }}/
+permalink: "/blog/tag/{{ tag | slugify }}/index.html"
 eleventyComputed:
-  title: Posts Tagged with # "{{ tag }}"
+    title: Art tagged with "{{ tag }}"
 ---
-
 <div class="content">
   <h1>Posts tagged with {{ tag }}</h1>
 {% for post in collections[tag] | reverse %}
@@ -30,10 +18,11 @@ eleventyComputed:
   <i class="far fa-calendar"></i> {{ post.data.date | date }} 
 <p>
   <i class="fas fa-tag"></i>
-  {% for tag in post.data.tags | exclude("blog") %}
+  {% for tag in post.data.tags %}
    | <a href="/blog/tag/{{ tag | slugify }}">#{{ tag }}</a>
  {% endfor %}
  
 </p>
 <hr>
 {% endfor %}
+</div>

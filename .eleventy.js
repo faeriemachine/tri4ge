@@ -11,11 +11,6 @@ module.exports = function (eleventyConfig) {
 
   });
 
-    eleventyConfig.addCollection('gallery', function(collectionApi) {
-    return collectionApi.getFilteredByGlob('src/gallery/**/*.md');
-
-  });
-
   // Exclude certain tags from displaying
     eleventyConfig.addFilter("exclude", (arr, exclude) => arr.filter((el) => el !== exclude));
     eleventyConfig.addFilter("limit", (arr, limit) => arr.slice(0, limit));
@@ -31,7 +26,7 @@ module.exports = function (eleventyConfig) {
         }));
     });
     eleventyConfig.addFilter("findTagCount", (tagList, findTag) => tagList.find(({ tag }) => tag === findTag)?.count);
-    
+
   const wordcountPlugin = require("eleventy-plugin-wordcount-extended");
   module.exports = function (eleventyConfig) {
     eleventyConfig.addPlugin(wordcountPlugin);
