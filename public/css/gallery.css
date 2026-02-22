@@ -53,30 +53,3 @@ li::before {
   text-align: center;
   width: 50%;
 }
-
-.tagsbox{
-  text-align: center;
-}
-
-/* Tag Menus */
-
-details > summary {
-    background-color: #D12C3A;
-    color: white;
-    padding: 8px;
-    border-radius: 10px;
-    margin-bottom: 5px;
-    cursor: pointer;
-}
-
-details > ul {
-  list-style-type: none;
-  padding-left: 0;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-details > li {
-  display: inline;
-  margin-top: 5px;
-}
