@@ -4,17 +4,6 @@ pagination:
   size: 1
   alias: tag
   addAllPagesToCollections: true
-  filter:
-      - 2026
-      - 2025
-      - gallery
-      - digital
-      - traditional
-      - reference
-      - character design
-      - study
-      - hyson
-      - treehouse
 layout: base.njk
 permalink: /blog/tag/{{ tag | slugify }}/
 eleventyComputed:
@@ -30,7 +19,7 @@ eleventyComputed:
   <i class="far fa-calendar"></i> {{ post.data.date | date }} 
 <p>
   <i class="fas fa-tag"></i>
-  {% for tag in post.data.tags | exclude("blog") %}
+  {% for tag in post.data.tags %}
    | <a href="/blog/tag/{{ tag | slugify }}">#{{ tag }}</a>
  {% endfor %}
  
