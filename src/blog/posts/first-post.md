@@ -7,7 +7,7 @@ pagetype: blog
 author: Kian Quinn
 tags:
   - Webdev
-  - Update
+  - Site Update
 ---
 
 Hello everyone, and welcome to tri4ge.icu, running on it's 2.0 layout!
