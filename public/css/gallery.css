@@ -2,10 +2,13 @@
   text-align: center;
 }
 
+.gallery{
+  text-align: center;
+}
+
 .gallery img { 
   border-radius: 0.5rem;
   box-shadow: 0px 0px 5px 1px #35123F;
-  margin: 5px;
   transition: all .2s ease;  
 }
 
@@ -31,6 +34,12 @@ li {
   margin-left: 8px;
 }
 
+li::before {
+  display: block;
+  margin-left: 8px;
+}
+
+
 #pagination {
   display: flex;
   gap: 10px;
@@ -43,4 +52,31 @@ li {
 #next, #back, #previous{
   text-align: center;
   width: 50%;
+}
+
+.tagsbox{
+  text-align: center;
+}
+
+/* Tag Menus */
+
+details > summary {
+    background-color: #D12C3A;
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+details > ul {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+details > li {
+  display: inline;
+  margin-top: 5px;
 }
