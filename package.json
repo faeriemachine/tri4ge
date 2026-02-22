@@ -1,7 +1,7 @@
 {
   "name": "tri4ge",
   "version": "1.0.0",
-  "description": "",
+  "description": "--- - ⌨️ Made with `.html`, `.css`, `.js`, and `.njk` - ⚙️ Created using [Eleventy](https://www.11ty.dev/), deployed using [Deploy2Nekoweb](https://deploy.nekoweb.org/) - ✏️ Necessary credits for code snippets on the site's [links page](https://tri4ge.icu/) ---",
   "main": "index.js",
   "scripts": {
     "start": "npx @11ty/eleventy --serve",
@@ -14,6 +14,18 @@
     "@11ty/eleventy": "^3.1.2",
     "eleventy-plugin-wordcount-extended": "^0.2.1",
     "freezeframe": "^5.0.2",
-    "glightbox": "^3.3.1"
-  }
+    "glightbox": "^3.3.1",
+    "maximatch": "^0.1.0",
+    "minimatch": "^10.2.2",
+    "nunjucks": "^3.2.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faeriemachine/tri4ge.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/faeriemachine/tri4ge/issues"
+  },
+  "homepage": "https://github.com/faeriemachine/tri4ge#readme"
 }

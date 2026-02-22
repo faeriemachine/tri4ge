@@ -53,11 +53,6 @@ li::before {
 #next, #back, #previous{
   text-align: center;
   width: 50%;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 }
 
 .tagsbox{
@@ -85,8 +80,4 @@ details > ul {
 details > li {
   display: inline;
   margin-top: 5px;
->>>>>>> parent of 1798890 (Reformat images)
-=======
->>>>>>> parent of f9348ff (Add search by tag navigation)
->>>>>>> 258445ce5669528806870d0954f9f9abfc082c9e
 }

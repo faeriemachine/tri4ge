@@ -27,6 +27,7 @@ module.exports = function (eleventyConfig) {
     });
     eleventyConfig.addFilter("findTagCount", (tagList, findTag) => tagList.find(({ tag }) => tag === findTag)?.count);
 
+// Word Count //
   const wordcountPlugin = require("eleventy-plugin-wordcount-extended");
   module.exports = function (eleventyConfig) {
     eleventyConfig.addPlugin(wordcountPlugin);
