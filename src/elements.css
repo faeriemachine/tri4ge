@@ -74,7 +74,7 @@
 
 .follow:hover {
   transform: scale(1.1);
-  color: #451aa1;
+  background-color: #451aa1;
 }
 
 /* Style for your post box (must start with ".post-box") */
