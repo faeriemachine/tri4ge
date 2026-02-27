@@ -309,6 +309,7 @@ a:not([href*="https://tri4ge.icu/"]):not([href^="#"]):not([href^="/"]):not(.no-i
 
 a:hover{
   color: var(--light--a-hover);
+  transition: all .2s ease; 
 }
 
 /* Font Awesome Outlinks */
