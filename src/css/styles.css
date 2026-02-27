@@ -424,7 +424,6 @@ a:hover{
   color: var(--light--brand-primary-hover);
 }
 
-
 .theme-toggle {
   width: 60px;
   height: 60px;
@@ -490,6 +489,11 @@ a:hover{
 
 .skip-to-content-link:focus, .skip-to-nav-link:focus {
   transform: translateY(0%);
+}
+
+/* Freezeframe */
+.freezeframe{
+  transition: none;
 }
 
 /* Grow on hover */
