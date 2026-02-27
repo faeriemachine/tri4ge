@@ -67,7 +67,7 @@
 
 *{
   text-decoration: none;
-  transition: all .5s ease;
+  transition: all 1s ease;
 }
 
 html {
