@@ -69,7 +69,6 @@
   text-decoration: none;
 }
 
-
 html {
   /* Set the font globally */
   font-family: var(--sans-font);
@@ -174,7 +173,7 @@ main {
 }
 
 /* Footer */
-body > footer {
+footer {
   margin: 0 auto;
   background-color: var(--light--box-secondary);
   color: white;
@@ -353,37 +352,6 @@ a:hover{
   padding: 10px;
   border-radius: 15px;
   animation: fadeInUp 0.25s ease-out;
-}
-
-/* Fade Effects */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.fadeInUp {
-    animation: fadeInUp 0.5s ease-out;
-}
-
-@keyframes fadeInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-p, img, li, span, h1, h2, h3, h4 {
-    animation: fadeInLeft 0.5s ease-out;
 }
 
 /* Animations */

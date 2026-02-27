@@ -26,6 +26,7 @@
 <!-- Meta Tags Generated with https://metatags.io -->
   
   <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/preloader.css" />
 
   <!-- update the core fontawesome file -->
   <link href="/assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
@@ -38,20 +39,29 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Mali:wght@600&display=swap" rel="stylesheet">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
   <title>Uses | Tri4ge.icu</title>
   <link rel="icon" type="image/x-icon" href="/img/favicon.PNG">
   
 </head>
 
 <body>
-<p style="text-align:center;margin:0;padding:0;">
-            <a class="skip-to-content-link" href="#maincont">
-        skip to content
-      </a>
-  </p>
-  <button onclick="topFunction()" id="top" title="Go to top"><i class="fa-solid fa-angles-up"></i></button>
-  <address id="toggle-button" class="theme-toggle"><img src="/img/togglesun.png" loading="lazy" id="toggle-img" alt="sun icon"></address>
-  <nav>   <head>
+<div class="mask">	
+<div class="lds-heart"><div></div></div>
+</div>
+
+<div id="loaded">
+  <p style="text-align:center;margin:0;padding:0;">
+              <a class="skip-to-content-link" href="#maincont">
+          skip to content
+        </a>
+    </p>
+
+    <button onclick="topFunction()" id="top" title="Go to top"><i class="fa-solid fa-angles-up"></i></button>
+    <address id="toggle-button" class="theme-toggle"><img src="/img/togglesun.png" loading="lazy" id="toggle-img" alt="sun icon"></address>
+    
+    <nav>   <head>
     <meta charset="utf-8">
     <!-- <title>Responsive Sidebar Menu</title> -->
     <link rel="stylesheet" href="style.css">
@@ -115,9 +125,9 @@
 </body>
 <script src="/js/dropdown.js"></script></nav>
 
-  <main class="fadeInUp"> 
-    <div class="wrapper">
-        <div class="content">
+    <main class="fadeInUp"> 
+      <div class="wrapper">
+          <div class="content">
     <h1 id="things-i-use">Things I use</h1>
 <p><strong>Disclaimer:</strong> Links are never affiliated, and nothing is sponsored.</p>
 
@@ -189,10 +199,10 @@
 <h3 id="digital-brushes">Digital brushes</h3>
 <p>Currently, I use an untextured version of the default Studio Pen available in Procreate on various opacity percentages for nearly everything, but I sometimes like to use <a href="https://www.etsy.com/ca/listing/1710435799/procreate-brushes-copic-craze-28-copic?ref=yr_purchases" target="_blank" rel="noopener noreferrer">these Copic-inspired brushes</a> as well. I've also created a brush based on <a href="https://www.instagram.com/p/DQ4aicbjPyQ/" target="_blank" rel="noopener noreferrer">this Instagram tutorial</a> for shading with rim lighting.</p>
 </div>
-    </div>
-  </main>
+      </div>
+    </main>
 
-  <footer><div class="footerflex">
+    <footer><div class="footerflex">
     <div class="footerflexlogo">
         <img src="../../../img/logofooter.png" alt="Tri4ge">
     </div>
@@ -204,6 +214,8 @@
         <p><a href="/home/">Home</a> • <a href="/sitemap/">Sitemap</a> • <a href="/changelog/">Changelog</a> • <a href="/links/">Links</a>
     </div>
 </div></footer>
+</div>
 </body>
+<script src="/js/preloader.js"></script>
 <script src="/js/lightdarktoggle.js"></script>
 <script src="/js/backtotop.js"></script>

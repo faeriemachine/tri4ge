@@ -26,6 +26,7 @@
 <!-- Meta Tags Generated with https://metatags.io -->
   
   <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/preloader.css" />
 
   <!-- update the core fontawesome file -->
   <link href="/assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
@@ -38,20 +39,29 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Mali:wght@600&display=swap" rel="stylesheet">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
   <title>Accessibility Statement | Tri4ge.icu</title>
   <link rel="icon" type="image/x-icon" href="/img/favicon.PNG">
   
 </head>
 
 <body>
-<p style="text-align:center;margin:0;padding:0;">
-            <a class="skip-to-content-link" href="#maincont">
-        skip to content
-      </a>
-  </p>
-  <button onclick="topFunction()" id="top" title="Go to top"><i class="fa-solid fa-angles-up"></i></button>
-  <address id="toggle-button" class="theme-toggle"><img src="/img/togglesun.png" loading="lazy" id="toggle-img" alt="sun icon"></address>
-  <nav>   <head>
+<div class="mask">	
+<div class="lds-heart"><div></div></div>
+</div>
+
+<div id="loaded">
+  <p style="text-align:center;margin:0;padding:0;">
+              <a class="skip-to-content-link" href="#maincont">
+          skip to content
+        </a>
+    </p>
+
+    <button onclick="topFunction()" id="top" title="Go to top"><i class="fa-solid fa-angles-up"></i></button>
+    <address id="toggle-button" class="theme-toggle"><img src="/img/togglesun.png" loading="lazy" id="toggle-img" alt="sun icon"></address>
+    
+    <nav>   <head>
     <meta charset="utf-8">
     <!-- <title>Responsive Sidebar Menu</title> -->
     <link rel="stylesheet" href="style.css">
@@ -115,9 +125,9 @@
 </body>
 <script src="/js/dropdown.js"></script></nav>
 
-  <main class="fadeInUp"> 
-    <div class="wrapper">
-        <div class="content">
+    <main class="fadeInUp"> 
+      <div class="wrapper">
+          <div class="content">
     <h1 id="accessibility-statement">Accessibility Statement</h1>
     <ul>
         <li>All pages on this website are responsive for mobile users.</li>
@@ -144,10 +154,10 @@
     <p>This site is a constant work-in-progress. Therefore, there likely will be inadequacies in it's accessibility that will need to be worked on. <strong>Feedback is always appreciated,</strong> and can be sent to <a href="mailto:batscanned@gmail.com">batscanned@gmail.com</a>.</p>
 </div>
 
-    </div>
-  </main>
+      </div>
+    </main>
 
-  <footer><div class="footerflex">
+    <footer><div class="footerflex">
     <div class="footerflexlogo">
         <img src="../../../img/logofooter.png" alt="Tri4ge">
     </div>
@@ -159,6 +169,8 @@
         <p><a href="/home/">Home</a> • <a href="/sitemap/">Sitemap</a> • <a href="/changelog/">Changelog</a> • <a href="/links/">Links</a>
     </div>
 </div></footer>
+</div>
 </body>
+<script src="/js/preloader.js"></script>
 <script src="/js/lightdarktoggle.js"></script>
 <script src="/js/backtotop.js"></script>
