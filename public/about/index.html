@@ -27,6 +27,7 @@
   
   <link rel="stylesheet" href="/css/styles.css" />
   <link rel="stylesheet" href="/css/preloader.css" />
+  <link rel="stylesheet" href="/css/style-my-tooltips.css" />
 
   <!-- update the core fontawesome file -->
   <link href="/assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
@@ -38,8 +39,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Mali:wght@600&display=swap" rel="stylesheet">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
   <title>About | Tri4ge.icu</title>
   <link rel="icon" type="image/x-icon" href="/img/favicon.PNG">
@@ -137,7 +136,7 @@
         </div>
         <div class="boxbio">
             <h2 id="kian-or-eddie" class="names"><span class="names">Kian or Eddie</span></h2>
-            <p><span class="pronouns"><a href="https://pronouns.cc/@tri4ge" target="_blank" rel="noopener noreferrer">He/him or she/her</a></span>
+            <p><span class="pronouns" ><a href="https://pronouns.cc/@tri4ge" target="_blank" rel="noopener noreferrer">He/him or she/her</a></span>
             <br><span id="age"></span>y/o (May 26th, 2000)
             <br>Ontario, Canada (ENG)</p>
         </div>
@@ -215,7 +214,7 @@
 
     <h3 id="-i-m-disabled">♿ I'm disabled</h3>
 
-    <p>I'm multiply disabled, including developmental (<span class="hovertxt" data-title="Medium support needs">MSN Autism</span>, <span class="hovertxt" data-title="APD, Dyscaluculia">learning disabled</span>, dyspraxia), physical (<a href="https://ehlers-danlos.org.nz/heds/" target="_blank" rel="noopener noreferrer">hEDS</a>, <a href="https://www.verywellhealth.com/autoimmunity-neuroinflammation-in-fibromyalgia-5197944" target="_blank" rel="noopener noreferrer">FMS</a>, <a href="https://me-pedia.org/wiki/Myalgic_encephalomyelitis" target="_blank" rel="noopener noreferrer">ME/CFS</a>, etc.) and <span class="hovertxt" data-title="Not your business">psychological disabilities</span>. Naturally, these conditions significantly impact every part of my life, including my abilities to work and socialize, so I appreciate being given grace and patience in these situations.</p>
+    <p>I'm multiply disabled, including developmental (<span class="hovertxt" title="Medium support needs">MSN Autism</span>, <span class="hovertxt" title="APD, Dyscaluculia">learning disabled</span>, dyspraxia), physical (<a href="https://ehlers-danlos.org.nz/heds/" target="_blank" rel="noopener noreferrer">hEDS</a>, <a href="https://www.verywellhealth.com/autoimmunity-neuroinflammation-in-fibromyalgia-5197944" target="_blank" rel="noopener noreferrer">FMS</a>, <a href="https://me-pedia.org/wiki/Myalgic_encephalomyelitis" target="_blank" rel="noopener noreferrer">ME/CFS</a>, etc.) and <span class="hovertxt" title="Not your business">psychological disabilities</span>. Naturally, these conditions significantly impact every part of my life, including my abilities to work and socialize, so I appreciate being given grace and patience in these situations.</p>
     
     <p>Being disabled is a large part of my identity, and I'm very into the <a href="https://en.wikipedia.org/wiki/Cripple_punk" target="_blank" rel="noopener noreferrer">cripplepunk movement</a> and <a href="https://en.wikipedia.org/wiki/Mad_pride" target="_blank" rel="noopener noreferrer">Mad Pride</a> as a result. I also hope to become more involved in disability rights activism in the future, as well as educating the general public and newly-disabled people about disability and it's endless amount of presentations.</p>
 
@@ -288,7 +287,16 @@
     </div>
 </div></footer>
 </div>
-</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="/js/jquery.style-my-tooltips.js"></script>
 <script src="/js/preloader.js"></script>
 <script src="/js/lightdarktoggle.js"></script>
 <script src="/js/backtotop.js"></script>
+<script>
+    (function($){
+        $(document).ready(function(){
+            $("[title]").style_my_tooltips();
+        });
+    })(jQuery);
+</script>
+</body>

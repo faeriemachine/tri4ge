@@ -29,7 +29,15 @@
       <img src="/img/index/paws.png" alt="Made with my own two paws">
     </p>
   </main>
-
-</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="/js/jquery.style-my-tooltips.js"></script>
 <script src="/js/lightdarktoggle.js"></script>
 <script src="/js/updated-visitors.js"></script>
+<script>
+    (function($){
+        $(document).ready(function(){
+            $("[title]").style_my_tooltips();
+        });
+    })(jQuery);
+</script>
+</body>
