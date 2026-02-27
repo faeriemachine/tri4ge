@@ -538,6 +538,23 @@ li {
   position: relative;
 }
 
+/* Data-title */
+.hovertxt[data-title]:hover:after {
+  content: attr(data-title);
+  position: absolute;
+  top: -150%;
+  left: -25%;
+  z-index: 100;
+  background-color: var(--light--bg-secondary);
+  color: var(--light--text-secondary);
+  width: 10rem;
+  font-size: 0.7em;
+  font-family: 'Mali';
+  padding: 10px;
+  border-radius: 15px;
+  animation: fadeInUp 0.25s ease-out;
+}
+
 /* Mobile */
 @media only screen and (max-width: 980px) {
   h1, h2 {
