@@ -491,6 +491,22 @@ a:hover{
   transform: translateY(0%);
 }
 
+/* Fade effects */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+li {
+    animation: fadeInLeft 0.5s ease-out;
+}
+
 /* Freezeframe */
 .freezeframe{
   transition: none;
