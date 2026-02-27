@@ -1,5 +1,10 @@
-	$(window).load(function() {
-		$('.lds-heart').delay(400).fadeOut('slow');
-    		  $('.mask').delay(300).fadeOut('slow'); 
-		$('body').delay(300).css({'overflow':'visible'});
-	  });
+var myVar;
+
+function preloader() {
+    myVar = setTimeout(showPage, 1000);
+}
+
+function showPage() {
+  document.getElementById("lds-heart").classList.add('hidden');
+  document.getElementById("loaded").classList.add('visible');
+}

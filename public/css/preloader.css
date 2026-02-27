@@ -1,10 +1,10 @@
-.lds-heart,
-.lds-heart div,
-.lds-heart div:after,
-.lds-heart div:before {
+#lds-heart,
+#lds-heart div,
+#lds-heart div:after,
+#lds-heart div:before {
   box-sizing: border-box;
 }
-.lds-heart {
+#lds-heart {
   top: 50%;
   left: 50%;
   position: absolute;
@@ -13,19 +13,17 @@
   height: 80px;
   transform: rotate(45deg);
   transform-origin: 40px 40px;
-  transition: opacity .5s;
-  animation: fadeOut 1s;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
+  opacity: 1;
+  transition:1s ease;
 }
-.lds-heart div {
+#lds-heart div {
   width: 32px;
   height: 32px;
   background: #D12C3A;
   animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-.lds-heart div:after,
-.lds-heart div:before {
+#lds-heart div:after,
+#lds-heart div:before {
   content: " ";
   position: absolute;
   display: block;
@@ -33,11 +31,11 @@
   height: 32px;
   background: #D12C3A;
 }
-.lds-heart div:before {
+#lds-heart div:before {
   left: -24px;
   border-radius: 50% 0 0 50%;
 }
-.lds-heart div:after {
+#lds-heart div:after {
   top: -24px;
   border-radius: 50% 50% 0 0;
 }
@@ -62,7 +60,7 @@
   }
 }
 
- .mask{
+ #mask{
         position: fixed;
         top: 0;
         left: 0;
@@ -72,15 +70,21 @@
             background-position: center;
             background-size: cover;
             background-attachment: fixed;
-        z-index: 99;
-            animation: fadeOut 1s;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
+        z-index: 99;	
+        opacity: 1;
+        transition:1s ease;
    }
 
+#lds-heart.hidden, #mask.hidden {
+  opacity: 0;
+}
 
-@keyframes fadeOut {
-    from { opacity: 1; }
-    to { opacity: 0; }
-}	
+#loaded{
+  opacity: 0;
+}
 
+#loaded.visible{
+  position: relative;
+  opacity: 1;
+  z-index: 1000;	
+}
