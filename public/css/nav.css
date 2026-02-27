@@ -89,13 +89,11 @@
 .dropdown-btn.active{
   border-left: 5px solid var(--orange);
   color: var(--orange);
-  transition: all .2s ease; 
 }
 
 .dropdown-btn:hover{
   border-left: 5px solid var(--orange);
   color: var(--orange);
-  transition: all .2s ease; 
   text-decoration:underline;
 }
 
@@ -185,4 +183,11 @@ label #cancel{
   margin-left: 270px;
   opacity: 1;
   visibility: visible;
+}
+
+
+@media (prefers-reduced-motion: no-preference) and (-moz-bool-pref: "userChrome.decoration.animate") {
+  button {
+    transition: none !important;
+  }
 }
