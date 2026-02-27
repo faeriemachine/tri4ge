@@ -14,6 +14,9 @@
   transform: rotate(45deg);
   transform-origin: 40px 40px;
   transition: opacity .5s;
+  animation: fadeOut 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
 }
 .lds-heart div {
   width: 32px;
@@ -69,6 +72,15 @@
             background-position: center;
             background-size: cover;
             background-attachment: fixed;
-        z-index: 99;	
+        z-index: 99;
+            animation: fadeOut 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
    }
+
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}	
 
