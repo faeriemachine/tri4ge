@@ -67,6 +67,7 @@
 
 *{
   text-decoration: none;
+  transition: all .5s ease;
 }
 
 html {
@@ -310,6 +311,7 @@ a:not([href*="https://tri4ge.icu/"]):not([href^="#"]):not([href^="/"]):not(.no-i
 a:hover{
   color: var(--light--a-hover);
   transition: all .2s ease; 
+  text-decoration:underline;
 }
 
 /* Font Awesome Outlinks */
@@ -329,6 +331,7 @@ a:hover{
     transform: scale(1.1); 
     background-color: var(--light--a-hover);
     color: white;
+    text-decoration:none;
 }
 
 .outlink a{
