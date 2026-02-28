@@ -60,22 +60,7 @@
   }
 }
 
- #mask{
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: var(--light--img-background);
-            background-position: center;
-            background-size: cover;
-            background-attachment: fixed;
-        z-index: 99;	
-        opacity: 1;
-        transition:1s ease;
-   }
-
-#lds-heart.hidden, #mask.hidden {
+#lds-heart.hidden{
   opacity: 0;
 }
 
