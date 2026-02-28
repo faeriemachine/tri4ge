@@ -25,9 +25,12 @@
 
 <!-- Meta Tags Generated with https://metatags.io -->
   
+  <!-- styles css -->
   <link rel="stylesheet" href="/css/styles.css" />
+  <!-- preloader css -->
   <link rel="stylesheet" href="/css/preloader.css" />
-  <link rel="stylesheet" href="/css/style-my-tooltips.css" />
+  <!-- tooltip css -->
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
 
   <!-- update the core fontawesome file -->
   <link href="/assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
@@ -213,7 +216,7 @@
 
     <h3 id="-i-m-disabled">♿ I'm disabled</h3>
 
-    <p>I'm multiply disabled, including developmental (<span class="hovertxt" data-title="Medium support needs">MSN Autism</span>, <span class="hovertxt" data-title="APD, Dyscaluculia">learning disabled</span>, dyspraxia), physical (<a href="https://ehlers-danlos.org.nz/heds/" target="_blank" rel="noopener noreferrer">hEDS</a>, <a href="https://www.verywellhealth.com/autoimmunity-neuroinflammation-in-fibromyalgia-5197944" target="_blank" rel="noopener noreferrer">FMS</a>, <a href="https://me-pedia.org/wiki/Myalgic_encephalomyelitis" target="_blank" rel="noopener noreferrer">ME/CFS</a>, etc.) and <span class="hovertxt" data-title="Not your business">psychological disabilities</span>. Naturally, these conditions significantly impact every part of my life, including my abilities to work and socialize, so I appreciate being given grace and patience in these situations.</p>
+    <p>I'm multiply disabled and have developmental (Autism, <span class="hovertxt" data-tippy-content="APD, Dyscaluculia">learning disabled</span>, dyspraxia), physical (<a href="https://ehlers-danlos.org.nz/heds/" target="_blank" rel="noopener noreferrer">hEDS</a>, <a href="https://www.verywellhealth.com/autoimmunity-neuroinflammation-in-fibromyalgia-5197944" target="_blank" rel="noopener noreferrer">FMS</a>, <a href="https://me-pedia.org/wiki/Myalgic_encephalomyelitis" target="_blank" rel="noopener noreferrer">ME/CFS</a>, etc.) and <span class="hovertxt" data-tippy-content="Not your business">psychological disabilities</span>. Naturally, these conditions significantly impact every part of my life, including my abilities to work and socialize, so I appreciate being given grace and patience in these situations.</p>
     
     <p>Being disabled is a large part of my identity, and I'm very into the <a href="https://en.wikipedia.org/wiki/Cripple_punk" target="_blank" rel="noopener noreferrer">cripplepunk movement</a> and <a href="https://en.wikipedia.org/wiki/Mad_pride" target="_blank" rel="noopener noreferrer">Mad Pride</a> as a result. I also hope to become more involved in disability rights activism in the future, as well as educating the general public and newly-disabled people about disability and it's endless amount of presentations.</p>
 
@@ -286,16 +289,18 @@
     </div>
 </div></footer>
 </div>
-
-<script src="/js/jquery.style-my-tooltips.js"></script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script>
+  tippy('[data-tippy-content]', {
+    theme: 'triage',
+    animation: 'scale',
+    touch: 'hold',
+    inertia: true,
+    arrow: true,
+  });
+</script>
 <script src="/js/preloader.js"></script>
 <script src="/js/lightdarktoggle.js"></script>
 <script src="/js/backtotop.js"></script>
-<script>
-    (function($){
-        $(document).ready(function(){
-            $("[title]").style_my_tooltips();
-        });
-    })(jQuery);
-</script>
 </body>

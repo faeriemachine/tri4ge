@@ -18,7 +18,8 @@
     "jquery": "^4.0.0",
     "maximatch": "^0.1.0",
     "minimatch": "^10.2.2",
-    "nunjucks": "^3.2.4"
+    "nunjucks": "^3.2.4",
+    "tippy.js": "^6.3.7"
   },
   "repository": {
     "type": "git",

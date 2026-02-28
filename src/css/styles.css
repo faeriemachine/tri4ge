@@ -1,10 +1,5 @@
 /* Global variables. */
 :root {
-  /* Set sans-serif & mono fonts */
-  --sans-font: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir,
-    "Nimbus Sans L", Roboto, Noto, "Segoe UI", Arial, Helvetica,
-    "Helvetica Neue", sans-serif;
-  --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
 /* Colours */
   --light--bg-primary: #F5FDE3;
   --light--border-primary: #FFA500;
@@ -40,7 +35,7 @@
   --yellow: #FEFDB1; /* White text color */
   --orange: #ff9900; /* Color on hover */
 }
-
+/* Fonts */
 .atkinson-hyperlegible-regular {
   font-family: "Atkinson Hyperlegible", sans-serif;
   font-weight: 400;
@@ -67,7 +62,7 @@
 
 *{
   text-decoration: none;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 }
 
 html {
@@ -324,7 +319,6 @@ a:hover{
     padding: 8px;
     border-radius: 10px;
     margin-bottom: 5px;
-    transition: all .2s ease;
 }
 
 .outlink:hover{  
@@ -339,24 +333,9 @@ a:hover{
 }
 
 .outlink:not([href*="https://tri4ge.icu/"]):not([href^="#"]):not([href^="/"]):not(.no-icon)::after {
-    content: none; /* Code for "arrow-up-right-from-square" */
+    content: none;
 }
 
-.outlink[aria-label]:hover:not([href*="https://tri4ge.icu/"]):not([href^="#"]):not([href^="/"]):not(.no-icon)::after {
-  content: attr(aria-label);
-  position: absolute;
-  top: -80%;
-  left: -25%;
-  z-index: 100;
-  background-color: var(--light--bg-secondary);
-  color: var(--light--text-secondary);
-  width: fit-content;
-  font-size: 0.5em;
-  font-family: 'Mali';
-  padding: 10px;
-  border-radius: 15px;
-  animation: fadeInUp 0.25s ease-out;
-}
 
 /* Animations */
 .rotation {
@@ -525,13 +504,11 @@ li {
 
 /* Grow on hover */
 .grow{
-    transition: all .2s ease;  
+  transition: all .3s ease;  
 }
 
 .grow:hover{
-    transform: scale(1.5); 
-    z-index: 999;
-    position: relative;
+  transform: scale(1.5); 
 }
 
 /* Pause on hover */
@@ -542,28 +519,32 @@ li {
   display:none;
 }
 
-/* Hover to show title */
+/* Hover to show tooltip */
 .hovertxt {
   font-weight: bold;
   border-bottom: 1px dashed var(--light--text-primary);
   position: relative;
 }
 
-/* Data-title */
-.hovertxt[data-title]:hover:after {
-  content: attr(data-title);
-  position: absolute;
-  top: -150%;
-  left: -25%;
-  z-index: 100;
-  background-color: var(--light--bg-secondary);
-  color: var(--light--text-secondary);
-  width: 10rem;
-  font-size: 0.7em;
+.tippy-box[data-theme~='triage'] {
+  background-color: #006262;
+  color: white;
   font-family: 'Mali';
-  padding: 10px;
-  border-radius: 15px;
-  animation: fadeInUp 0.25s ease-out;
+  font-weight: bold;
+  font-size: .75em;
+  border-radius: 25px;
+}
+
+.tippy-arrow {
+  transition: none;
+}
+
+.tippy-box[data-theme~='triage'][data-placement^='top'] > .tippy-arrow::before {
+  border-top-color: #006262;
+}
+
+.tippy-box[data-inertia][data-state='visible'] {
+  transition-timing-function: cubic-bezier();
 }
 
 /* Mobile */

@@ -187,6 +187,6 @@ label #cancel{
 
 @media (prefers-reduced-motion: no-preference) and (-moz-bool-pref: "userChrome.decoration.animate") {
   button {
-    transition: all 1s ease;
+    transition: none !important;
   }
 }
