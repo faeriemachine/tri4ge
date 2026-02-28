@@ -1,5 +1,0 @@
-@media (prefers-reduced-motion: no-preference) and (-moz-bool-pref: "userChrome.decoration.animate") {
-  button {
-    transition: none !important;
-  }
-}

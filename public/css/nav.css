@@ -47,8 +47,10 @@
   line-height: 65px;
   padding-left: 30px;
   box-sizing: border-box;
+  background: var(--light--box-secondary);
   border: 5px solid transparent;
   font-family: 'Mali';
+  text-align: left;
   color: white;
 }
 
@@ -62,7 +64,7 @@
   margin-right: 16px;
 }
 
-.sidebar a span{
+.sidebar span{
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -71,7 +73,7 @@
   display: none;
 }
 
-/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+/* Dropdown container (hidden by default). */
 .dropdown-btn{
   display: block;
   height: 65px;
@@ -86,26 +88,25 @@
   color: white;
 }
 
+.dropdown-btn:hover{
+  border-left: 5px solid var(--orange);
+  color: var(--orange);
+  cursor: pointer;
+}
+
 .dropdown-btn.active{
   border-left: 5px solid var(--orange);
   color: var(--orange);
 }
 
-.dropdown-btn:hover{
-  border-left: 5px solid var(--orange);
-  color: var(--orange);
-  text-decoration:underline;
-}
-
-.dropdown-btn i{
-  font-size: 23px;
-  margin-right: 16px;
-}
-
 .label{
-  font-size: 1.5em;
   letter-spacing: 1px;
   text-transform: uppercase;
+  margin-left: 16px;
+}
+
+.label:hover{
+  text-decoration:underline;
 }
 
 .dropdown-container {
