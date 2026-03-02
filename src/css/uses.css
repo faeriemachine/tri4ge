@@ -1,0 +1,51 @@
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 1em;
+    overflow:hidden;
+}
+
+th{
+    background-color: var(--light--bg-secondary);
+    color: white;
+    font-family: 'Mali';
+    padding: 8px;
+    border-radius: 1px;
+}
+
+tr {
+    color: var(--light--text-primary);
+    text-align: center;
+}
+
+table tr:first-child th:first-child {
+  border-top-left-radius: 25px;
+}
+
+table tr:first-child th:last-child {
+  border-top-right-radius: 25px;
+}
+
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 25px;
+}
+
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 25px;
+}
+
+tr:nth-child(2n) {
+    background-color: var(--light--table-primary);
+}
+
+td {
+    border: 3px solid var(--light--border-primary);
+    padding: 8px;
+}
+
+/* Mobile */
+@media only screen and (max-width: 980px) {
+  .stuff {
+    overflow-x: scroll;
+  }
+}

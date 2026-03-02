@@ -6,8 +6,9 @@
   --light--box-primary: #FEFDB1;
   --light--bg-secondary: #006262;
   --light--box-secondary: #004646;
-  --light--text-primary: #006262;
+  --light--text-primary: #005959;
   --light--text-secondary: #fff;
+  --light--table-primary: #FFFDBF;
   --light--a-primary: #D12C3A;
   --light--a-hover: #451AA1;
   --light--h4: #6e116e;
@@ -23,6 +24,7 @@
   --dark--box-secondary: #001d1d;
   --dark--text-primary: #bff;
   --dark--text-secondary: #fff;
+  --dark--table-primary: #131309;
   --dark--a-primary: #ff8990;
   --dark--a-hover: #996afd;
   --dark--h4: #e269e2;
@@ -266,7 +268,7 @@ hr {
   border-style: solid;
   border-width: 2px;
   border-radius: 3px;
-} 
+}
 
 /* Format selection */
 ::selection{
@@ -292,20 +294,20 @@ a:not([href*="https://tri4ge.icu/"]):not([href^="#"]):not([href^="/"]):not(.no-i
 }
 
 .webring-info a:not([href*="https://tri4ge.icu/"]):not([href^="#"]):not([href^="/"]):not(.no-icon)::after {
-  content: none; 
+  content: none;
 }
 
 .webring-prev a:not([href*="https://tri4ge.icu/"]):not([href^="#"]):not([href^="/"]):not(.no-icon)::after {
-  content: none; 
+  content: none;
 }
 
 .webring-next a:not([href*="https://tri4ge.icu/"]):not([href^="#"]):not([href^="/"]):not(.no-icon)::after {
-  content: none; 
+  content: none;
 }
 
 a:hover{
   color: var(--light--a-hover);
-  transition: all .2s ease; 
+  transition: all .2s ease;
   text-decoration:underline;
   letter-spacing: 1px;
 }
@@ -314,7 +316,7 @@ a:hover{
 .outlink {
     text-decoration: none;
     font-size: 1.5em;
-    width: 1.75em; 
+    width: 1.75em;
     background-color: #D12C3A;
     color: white;
     padding: 8px;
@@ -322,8 +324,8 @@ a:hover{
     margin-bottom: 5px;
 }
 
-.outlink:hover{  
-    transform: scale(1.1); 
+.outlink:hover{
+    transform: scale(1.1);
     background-color: var(--light--a-hover);
     color: white;
     text-decoration:none;
@@ -361,6 +363,7 @@ a:hover{
   --light--bg-secondary: var(--dark--bg-secondary);
   --light--box-secondary: var(--dark--box-secondary);
   --light--text-primary: var(--dark--text-primary);
+  --light--table-primary: var(--dark--table-primary);
   --light--text-secondary: var(--dark--text-secondary);
   --light--a-primary: var(--dark--a-primary);
   --light--a-hover: var(--dark--a-hover);
@@ -505,11 +508,11 @@ li {
 
 /* Grow on hover */
 .grow{
-  transition: all .3s ease;  
+  transition: all .3s ease;
 }
 
 .grow:hover{
-  transform: scale(1.5); 
+  transform: scale(1.5);
 }
 
 /* Pause on hover */
@@ -561,7 +564,7 @@ li {
   .wrapper{
     width: 98%;
   }
-  
+
   .footerflex{
   height: auto;
   gap: initial;

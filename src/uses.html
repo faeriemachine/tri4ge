@@ -2,13 +2,14 @@
 title: Uses
 layout: base.njk
 ---
+<link rel="stylesheet" href="/css/uses.css{{ nocache }}" />
 <div class="content">
     <h1 id="things-i-use">Things I use</h1>
 <p><strong>Disclaimer:</strong> Links are never affiliated, and nothing is sponsored.</p>
 
 <h2 id="this-site">This site</h2>
 
-<p>This site is made with <a href="https://www.11ty.dev/" target="_blank" rel="noopener noreferrer">11ty</a> as my static site generator of choice, with <a href="https://mozilla.github.io/nunjucks/" target="_blank" rel="noopener noreferrer">nunjucks</a> as my templating language. <a href="https://petrapixel.neocities.org/coding/eleventy-tutorial" target="_blank" rel="noopener noreferrer">This tutorial</a> was immensely helpful for me in getting started with 11ty! I also use <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout/Basic_concepts" target="_blank" rel="noopener noreferrer">flexbox</a> as my choice of layout module, which allows my site to be resized for other screen sizes! It's hosted on the superior free static website hosting service known as <a href="https://nekoweb.org/" target="_blank" rel="noopener noreferrer">Nekoweb</a>, and deployed using <a href="https://deploy.nekoweb.org/" target="_blank" rel="noopener noreferrer">Deploy2Nekoweb</a>.</p>
+<p>This site is made with <a href="https://www.11ty.dev/" target="_blank" rel="noopener noreferrer">11ty</a> as my static site generator of choice, with <a href="https://mozilla.github.io/nunjucks/" target="_blank" rel="noopener noreferrer">nunjucks</a> as my templating language. <a href="https://petrapixel.neocities.org/coding/eleventy-tutorial" target="_blank" rel="noopener noreferrer">This tutorial</a> was immensely helpful for me in getting started with 11ty! I also use <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout/Basic_concepts" target="_blank" rel="noopener noreferrer">flexbox</a> as my choice of layout module, which allows my site to be resized for other screen sizes! It's hosted on the free static website hosting service known as <a href="https://nekoweb.org/" target="_blank" rel="noopener noreferrer">Nekoweb</a>, and deployed using <a href="https://deploy.nekoweb.org/" target="_blank" rel="noopener noreferrer">Deploy2Nekoweb</a>.</p>
 <p>I do all of my coding in <a href="https://vscodium.com/" target="_blank" rel="noopener noreferrer">VSCodium</a>, which is a free, open source software binary distribution of Microsoft's VSCode that doesn't contain any telemetry/tracking!</p>
 
 <hr>
@@ -50,19 +51,212 @@ layout: base.njk
 <h3 id="software">Software</h3>
 
 <p><strong>Desktop PC only,</strong> but some of these I also use on my laptop</p>
-<ul>
-    <li><strong>Desktop Environment:</strong> <a href="https://kde.org/plasma-desktop/" target="_blank" rel="noopener noreferrer">KDE Plasma</a></li>
-    <li><strong>Terminal:</strong> <a href="https://sw.kovidgoyal.net/kitty/" target="_blank" rel="noopener noreferrer">Kitty</a></li>
-    <li><strong>Application Menu:</strong> <a href="https://github.com/adi1090x/rofi?tab=readme-ov-file" target="_blank" rel="noopener noreferrer">rofi</a></li>
-    <li><strong>Browser:</strong> <a href="https://www.waterfox.net/" target="_blank" rel="noopener noreferrer">Waterfox</a> &amp; <a href="https://www.torproject.org/" target="_blank" rel="noopener noreferrer">Tor Browser</a></li>
-    <li><strong>Coding:</strong> <a href="https://vscodium.com/" target="_blank" rel="noopener noreferrer">VSCodium</a> &amp; <a href="https://notepadqq.com/s/" target="_blank" rel="noopener noreferrer">Notepadqq</a></li>
-    <li><strong>Notes:</strong> <a href="https://obsidian.md/"target="_blank" rel="noopener noreferrer">Obsidian</a></li>
-    <li><strong>Music:</strong> <a href="https://audacious-media-player.org/" target="_blank" rel="noopener noreferrer">Audacious</a></li>
-    <li><strong>Media:</strong> <a href="https://www.videolan.org/vlc/" target="_blank" rel="noopener noreferrer">VLC Media Player</a></li>
-    <li><strong>Torrent client:</strong> <a href="https://deluge-torrent.org/" target="_blank" rel="noopener noreferrer">Deluge</a></li>
-    <li><strong>Screen recording:</strong> <a href="https://obsproject.com/" target="_blank" rel="noopener noreferrer">Open Broadcaster Software</a></li>
-    <li><strong>Virtual Machine:</strong> <a href="https://www.virtualbox.org/" target="_blank" rel="noopener noreferrer">Oracle VirtualBox</a></li>
-</ul>
+
+<div class="stuff">
+    <table>
+        <thead>
+            <tr>
+                <th>Software</th>
+                <th>Name</th>
+                <th>Comments</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Terminal</td>
+                <td><a href="https://sw.kovidgoyal.net/kitty/" target="_blank" rel="noopener noreferrer">Kitty</a></td>
+                <td>Not much to say, besides the fact that I&#39;m a sucker for customization. <a href="/img/uses/fastfetch.png">Here</a> is my Fastfetch by the way.</td>
+            </tr>
+            <tr>
+                <td>DE</td>
+                <td><a href="https://kde.org/plasma-desktop/" target="_blank" rel="noopener noreferrer">KDE Plasma</a></td>
+                <td>My DE of choosing when first starting off with EndeavourOS, ended up liking it enough to stay. I feel it has the right balance between being intuitive, and offering a good amount of customisation.</td>
+            </tr>
+            <tr>
+                <td>App menu</td>
+                <td><a href="https://github.com/adi1090x/rofi?tab=readme-ov-file" target="_blank" rel="noopener noreferrer">Rofi</a></td>
+                <td>Replacement for dmenu for customisation, you can see how I&#39;ve themed mine <a href="/img/uses/rofi.png">here</a>.</td>
+            </tr>
+            <tr>
+                <td>Browser</td>
+                <td><a href="https://www.waterfox.net/" target="_blank" rel="noopener noreferrer">Waterfox</a></td>
+                <td>Fork of Firefox to avoid Mozilla&#39;s stupid AI bullshit. Librewolf is probably better, but I like that you can easily sync bookmarks and history using Firefox accounts.</td>
+            </tr>
+            <tr>
+                <td>IDE</td>
+                <td><a href="https://vscodium.com/" target="_blank" rel="noopener noreferrer">VSCodium</a></td>
+                <td>VSCode fork without Microsoft&#39;s trackers. I love this software, and I have a ton of extensions and settings I&#39;ve applied to it below. Love it&#39;s customisability and choice of extensions, I think it&#39;s relatively easy to use and has a ton of quality-of-life features that make coding much more simple.</td>
+            </tr>
+            <tr>
+                <td>Text editor</td>
+                <td><a href="https://kate-editor.org/" target="_blank" rel="noopener noreferrer">Kate</a></td>
+                <td>Came packaged with KDE Plasma. Works fine, I really only use it to edit small bits of code and to backup my Toyhouse profile codes in.</td>
+            </tr>
+            <tr>
+                <td>Notes</td>
+                <td><a href="https://obsidian.md/" target="_blank" rel="noopener noreferrer">Obsidian</a></td>
+                <td>Can&#39;t sing enough high praise for Obsidian. Highly customisable with a wide range of extensions. I&#39;ve been taking daily notes in it for almost 3 years now.</td>
+            </tr>
+            <tr>
+                <td>Word processor</td>
+                <td><a href="https://www.libreoffice.org/" target="_blank" rel="noopener noreferrer">LibreOffice</a></td>
+                <td>FOSS alternative to Microsoft Word, I use it for putting together documents when need be.</td>
+            </tr>
+            <tr>
+                <td>Music player</td>
+                <td><a href="https://audacious-media-player.org/" target="_blank" rel="noopener noreferrer">Audacious</a></td>
+                <td>It&#39;s the only thing that consistently works and also has Discord Rich Presence. Also cool for having WinAMP skin support, but I don't use that feature often.</td>
+            </tr>
+            <tr>
+                <td>Media player</td>
+                <td><a href="https://www.videolan.org/vlc/" target="_blank" rel="noopener noreferrer">VLC Media Player</a></td>
+                <td>Ole reliable.</td>
+            </tr>
+            <tr>
+                <td>Image editing</td>
+                <td><a href="https://krita.org/en/" target="_blank" rel="noopener noreferrer">Krita</a></td>
+                <td>Still getting used to it&#39;s UI after leaving Clip Studio behind when I switched to Linux, but I quite like it. Very powerful piece of software, considering it&#39;s completely free. Open source as well, can&#39;t go wrong with Krita.</td>
+            </tr>
+            <tr>
+                <td>Torrenting</td>
+                <td><a href="https://deluge-torrent.org/" target="_blank" rel="noopener noreferrer">Deluge</a></td>
+                <td>I used to use qBittorrent until it broke on me one day when I still used Windows. Haven&#39;t switched back since though, I find Deluge works just as fine.</td>
+            </tr>
+            <tr>
+                <td>Recording</td>
+                <td><a href="https://obsproject.com/" target="_blank" rel="noopener noreferrer">OBS</a></td>
+                <td>Again, ole reliable.</td>
+            </tr>
+            <tr>
+                <td>Screenshotting</td>
+                <td><a href="https://apps.kde.org/spectacle/" target="_blank" rel="noopener noreferrer">Spectacle</a></td>
+                <td>Came packaged with KDE Plasma, no complaints. Includes both screenshotting and screen recording.</td>
+            </tr>
+            <tr>
+                <td>Virtual Machine</td>
+                <td><a href="https://www.virtualbox.org/" target="_blank" rel="noopener noreferrer">Oracle VirtualBox</a></td>
+                <td>I think Vinesauce Joel used to use VirtualBox for his Windows Destruction streams, so that's what I chose for my own virtual machines.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h3 id="vscodium-extensions-settings">VSCodium Extensions and Settings</h3>
+
+<div class="stuff">
+    <table>
+        <thead>
+            <tr>
+                <th>Extension</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="https://marketplace.visualstudio.com/items?itemName=nopjmp.fairyfloss" target="_blank" rel="noopener noreferrer">Fairyfloss</a></td>
+                <td>My theme of choice!</td>
+            </tr>
+            <tr>
+                <td><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server" target="_blank" rel="noopener noreferrer">Live Preview</a></td>
+                <td>Host a local server in your workspace to preview web projects.</td>
+            </tr>
+            <tr>
+                <td><a href="https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser" target="_blank" rel="noopener noreferrer">Open in Browser</a></td>
+                <td>Open current file in your default browser.</td>
+            </tr>
+            <tr>
+                <td><a href="https://github.com/stylelint/vscode-stylelint" target="_blank" rel="noopener noreferrer">Stylelint</a></td>
+                <td>CSS error checker.</td>
+            </tr>
+            <tr>
+                <td><a href="https://github.com/crate-ci/typos" target="_blank" rel="noopener noreferrer">Typos</a></td>
+                <td>Low false-positive source code spell checker.</td>
+            </tr>
+            <tr>
+                <td><a href="https://github.com/jakobhoeg/vscode-pokemon" target="_blank" rel="noopener noreferrer">VSCode-Pokemon</a></td>
+                <td>Puts cute Pokemon in your code editor for productivity and motivation!</td>
+            </tr>
+            <tr>
+                <td><a href="https://github.com/narcisbugeag/vscord" target="_blank" rel="noopener noreferrer">VSCord</a></td>
+                <td>Customisable Discord Rich Presence extension.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="stuff">
+    <table>
+        <thead>
+            <tr>
+                <th>Setting</th>
+                <th>My setting</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&quot;open-in-browser.default&quot;</td>
+                <td>&quot;waterfox&quot;</td>
+                <td>Set your default browser for open-in-browser.</td>
+            </tr>
+            <tr>
+                <td>&quot;editor.fontFamily&quot;</td>
+                <td>&quot;Fira Code&quot;</td>
+                <td>Set your editor font</td>
+            </tr>
+            <tr>
+                <td>&quot;editor.fontLigatures&quot;</td>
+                <td>true</td>
+                <td>Enables font ligatures.</td>
+            </tr>
+            <tr>
+                <td>&quot;editor.formatOnType&quot;</td>
+                <td>true</td>
+                <td>Automatically formats code while typing.</td>
+            </tr>
+            <tr>
+                <td>&quot;editor.cursorBlinking&quot;</td>
+                <td>&quot;phase&quot;</td>
+                <td>Smoother cursor blinking.</td>
+            </tr>
+            <tr>
+                <td>&quot;editor.cursorSmoothCaretAnimation&quot;</td>
+                <td>&quot;on&quot;</td>
+                <td>Smoother cursor movement.</td>
+            </tr>
+            <tr>
+                <td>&quot;editor.smoothScrolling&quot;</td>
+                <td>true</td>
+                <td>Smoother scroll movement.</td>
+            </tr>
+            <tr>
+                <td>&quot;files.autoSave&quot;</td>
+                <td>&quot;afterDelay&quot;</td>
+                <td>Enables autosaving files after a delay.</td>
+            </tr>
+            <tr>
+                <td>&quot;files.autoSaveDelay&quot;</td>
+                <td>100</td>
+                <td>Delay for when files are autosaved.</td>
+            </tr>
+            <tr>
+                <td>&quot;files.trimTrailingWhitespace&quot;</td>
+                <td>true</td>
+                <td>Automatically trims whitespace at file save time.</td>
+            </tr>
+            <tr>
+                <td>&quot;files.insertFinalNewline&quot;</td>
+                <td>true</td>
+                <td>Automatically inserts newline at the end of files on save.</td>
+            </tr>
+            <tr>
+                <td>&quot;files.exclude&quot;</td>
+                <td>"**/.git": true,<br /> "**/node_modules": true</td>
+                <td>Excludes directories and files from the file explorer</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 <hr>
 
@@ -73,4 +267,21 @@ layout: base.njk
 
 <h3 id="digital-brushes">Digital brushes</h3>
 <p>Currently, I use an untextured version of the default Studio Pen available in Procreate on various opacity percentages for nearly everything, but I sometimes like to use <a href="https://www.etsy.com/ca/listing/1710435799/procreate-brushes-copic-craze-28-copic?ref=yr_purchases" target="_blank" rel="noopener noreferrer">these Copic-inspired brushes</a> as well. I've also created a brush based on <a href="https://www.instagram.com/p/DQ4aicbjPyQ/" target="_blank" rel="noopener noreferrer">this Instagram tutorial</a> for shading with rim lighting.</p>
+
+<h3 id="fursuit-buulding">Fursuit Building</h3>
+<p>My choice of sewing machine is a Singer 328J from the 1960&#39;s using Singer size 16 needles. I usually use Gütermann polyester thread when machine sewing, and [brand] upholstery thread for hand sewing.</p>
+<p>I don&#39;t get my fabric from just one source, and many of my sources can be found on the <a href="/links">links</a> page. For head lining I do stick with using Big Z&#39;s <a href="https://bigzfabric.com/products/neoprene-scuba-techno-athletic-double-knit-all-purpose-fabric-charcoal-sold-by-the-yard?_pos=1&amp;_sid=637f64a71&amp;_ss=r" target="_blank" rel="noopener noreferrer">color-fast (non-bleeding) techno neoprene</a> the most, however. I also prefer to cuff handpaws with ribbed knit cuffing fabric.</p>
+<p>Information about 3D printing will be available when I start 3D printing suit parts in the future.</p>
+<p>Other tools of the trade include:</p>
+
+<ul>
+    <li>Fiskars spring-loaded scissors (cutting fabric)</li>
+    <li>Gorilla Glue high-low temp glue gun &amp; glue sticks</li>
+    <li>Fuzzbutt Fursuits&#39; <a href="https://www.fuzzbuttfursuits.com/products/mannie-the-mannequin?variant=43617681572064" target="_blank" rel="noopener noreferrer">Mannie the mannequin head</a></li>
+    <li>Tailor's chalk (marking stretchy fabric, I.E. neoprene)</li>
+    <li>Sewing clips (alternative to pins)</li>
+    <li>Sminiker pet clippers</li>
+</ul>
+
+
 </div>
