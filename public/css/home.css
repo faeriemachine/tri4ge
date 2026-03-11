@@ -64,15 +64,15 @@ h2 {
     border: 5px solid var(--light--box-primary);
   }
 
-.latest img { 
+.latest img {
   border-radius: 0.5rem;
   box-shadow: 0px 0px 5px 1px #35123F;
   margin: 5px;
-  transition: all .2s ease;  
+  transition: all .2s ease;
 }
 
 .latest img:hover{
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
 #updates, #blogroll{
@@ -94,7 +94,7 @@ h2 {
 }
 
 textarea{
-    height: 5rem; 
+    height: 5rem;
     width: 13rem;
 }
 
@@ -172,7 +172,7 @@ textarea{
     order: 1;
     width: 100%;
   }
-  
+
   #blogroll {
     height: 30rem;
     overflow: scroll;
@@ -187,11 +187,15 @@ textarea{
     height: auto;
     width: auto;
   }
-  
+
   .hysondoll {
     width: auto;
     padding: 5px;
     margin: 0 auto;
+  }
+
+  .ff-container.ff-responsive .ff-image{
+  width: 100%;
   }
 
   #statuscafe-content{

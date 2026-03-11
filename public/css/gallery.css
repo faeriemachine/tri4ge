@@ -6,14 +6,14 @@
   text-align: center;
 }
 
-.gallery img { 
+.gallery img {
   border-radius: 0.5rem;
   box-shadow: 0px 0px 5px 1px #35123F;
-  transition: all .2s ease;  
+  transition: all .2s ease;
 }
 
 .gallery img:hover{
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
 article img {
@@ -80,4 +80,13 @@ details > ul {
 details > li {
   display: inline;
   margin-top: 5px;
+}
+
+/* Mobile */
+@media only screen and (max-width: 980px) {
+
+  #pagination {
+    flex-direction: column;
+  }
+
 }

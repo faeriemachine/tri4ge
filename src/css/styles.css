@@ -553,8 +553,9 @@ li {
 
 /* Mobile */
 @media only screen and (max-width: 980px) {
-  h1, h2 {
-    font-size: xx-large;
+  h1, h2, h3 {
+    font-size: inherit;
+    margin: 0;
   }
 
   .flexbox{
@@ -565,9 +566,14 @@ li {
     width: 98%;
   }
 
+  .footerlogo{
+  width: 100%;
+  }
+
   .footerflex{
   height: auto;
   gap: initial;
+  margin: auto 0px;
   }
 
   .footerflexlogo {
