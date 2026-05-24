@@ -2,7 +2,7 @@
 layout: post.njk
 title: Baby's First Blog Post
 description: My first blog post on this site! Detailing a bit about how the site was made, and some future plans for it.
-date: 2026-02-13
+date: 2026-05-26
 pagetype: blog
 author: Kian Quinn
 tags:
@@ -10,7 +10,7 @@ tags:
   - Site Update
 ---
 
-Hello everyone, and welcome to tri4ge.icu, running on it's 2.0 layout!
+Hello everyone, and welcome to tri4ge.icu, running on it's 2.0 layout (and also happy birthday to me, as this is published on my birthday!)
 
 This is an update that's been a long time coming, as the 1.0 layout of this site was amateur work and desperately in need of recoding from the ground up. Ever since I started working on 1.0's layout, I learned a lot more about coding and website structural integrity, and have been wanting to change the way this site looks and operates since I first published it in September of 2025.
 
