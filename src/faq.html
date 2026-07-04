@@ -3,27 +3,67 @@ title: FAQ
 layout: base.njk
 date: Last Modified
 ---
+<style>
+dt {
+  font-weight: bold;
+  margin: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  font-family: 'Mali';
+  border-bottom: solid 2px var(--light--border-primary);
+}
+
+dt > span {
+   position: relative;
+   display: inline-block;
+   z-index: 2;
+   color: white;
+}
+
+dt > span::before {
+  content: "";
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  position: absolute;
+  z-index: -1;
+  background-color: #D12C3A;
+  border-radius: 10px;
+  aspect-ratio: 1/1;
+  width: 2.65rem;
+}
+
+dd{
+  margin: 10px;
+}
+
+
+
+</style>
 <div class="content">
 <h1 id="frequently-asked-questions">Frequently Asked Questions</h1>
-<p style="text-align:center"><i class="rotation fa-solid fa-arrows-rotate"></i> <strong>Last updated:</strong> {{ page.date.toLocaleString( undefined, { year: 'numeric', month: 'long', day: 'numeric' }) }}</p>
+<p style="text-align:center"><i class="rotation fa-solid fa-arrows-rotate"></i> <strong>Last updated:</strong> {{ page.date.toLocaleString( undefined, { year: 'numeric', month: 'long', day: 'numeric' }) }}</dd>
 
 <h2 id="creative" style="text-align: center;">Creative</h2>
 
-<h3 id="how-did-you-teach-yourself-how-to-draw-">How did you teach yourself how to draw?</h3>
-<p>A lot of patience. Yes, practice is a huge part of the learning process and everyone will tell you that, but so is having patience with yourself and the progression of your skills. As much I would've loved for it to happen, I didn't wake up one day with the skillset I have today, and I had to wait through years of being a total amateur before I got somewhere. Be patient with yourself, we all learn things at a different pace.</p>
-<p>That being said, I also have a few other pieces of advice for those who are just starting out with art:</p>
+<dt id="how-did-you-teach-yourself-how-to-draw-"><span>1.</span>How did you teach yourself how to draw?</dt>
+<dd>A lot of patience. Yes, practice is a huge part of the learning process and everyone will tell you that, but so is having patience with yourself and the progression of your skills. As much I would've loved for it to happen, I didn't wake up one day with the skillset I have today, and I had to wait through years of being a total amateur before I got somewhere. Be patient with yourself, we all learn things at a different pace.</dd>
+<dd>That being said, I also have a few other pieces of advice for those who are just starting out with art:</dd>
 <ul>
     <li>Learn about composition in visual arts, especially the 7 elements of art. In fact, I consider this pre-requisite material because everything you create will involve these elements.  </li>
     <li>Reference everything, and don't believe a single soul who tells you that you're cheating by referencing. Everyone uses references, everyone <em>has</em> to use references at some point in their life, it's no different when you're an artist. Reference from real life, reference from 2D artwork, reference from 3D models, reference from costumes and fursuits, reference from everything you need to. Just would advise against referencing off of genAI works—not only are there ethical concerns with genAI, but it's also not going to give you an accurate idea of things like anatomy and elements.</li>
     <li>Studying doesn't have to be boring either- try and relate it to your interests somehow! Wanting to study fabric? Do 30 minutes of study, then draw your favourite or original character in long flowing clothes! Doing value studies? Draw your favourite animal! Studying might still be a little bit boring, but while you genuinely just have to draw things that don't fit your interests, you also don't have to eat your vegetables without seasoning.  </li>
     <li>Waiting until you magically develop the skillset you need to draw certain things is just shooting yourself in the foot. Take risks and be sloppy about it, because it's the only way you're going to be able to get your feet in the water with learning different skills.  </li>
-    <li>That being said, tutorials are your friend and I highly recommend seeking them out for yourself. Find tutorials for whatever you're interested in—such as perspective, anatomy, lighting, and composition—and study.  </li>
+    <li>Read art books!!! Art tutorials on the internet are fine, but studying from the source is going to have the greatest effect on your skills. <a href="https://archive.org/details/@faeriemachine/lists/5/art-books" target="_blank" rel="noopener noreferrer">Here is a list on Internet Archive</a> of some art books I have saved for your studying pleasure.</li>
     <li>Your unique style will come with time, practice, and studying. Don't get down on yourself for not having a distinct style when you're still a beginner.  </li>
     <li>And finally, remember that the artists you look up to have all started at the same place as you, and needed to do the work to build their skills to where you want them to be.</li>
 </ul>
 
-<h3 id="okay-but-how-do-you-draw-">Okay, but how do <em>YOU</em> draw?</h3>
-<p>My techniques can change depending on the piece, but there are some that are common throughout:</p>
+<dt id="okay-but-how-do-you-draw-"><span>2.</span>Okay, but how do YOU draw?</dt>
+<dd>My techniques can change depending on the piece, but there are some that are common throughout:</dd>
 <ul>
     <li>I use one brush for pretty much everything, unless a specific idea calls for more brush variety. Otherwise, I use a smooth version of Procreate's default Studio Pen for sketching, erasing, colour blocking, shading/lighting, and rendering. Sometimes I'll also use the default airbrushes for gradients.</li>
     <li>I don't do line art! At least, not with my digital paintings. Even my simpler illustration pieces usually just use a cleaned up version of my sketch. But otherwise, I'm no longer a line art guy and probably never will be.</li>
@@ -36,13 +76,13 @@ date: Last Modified
     <li>I also do a lot of cross-hatching in my work, and I think it has a very nice effect when it's used to emulate both soft gradients and hard transitions between colours.</li>
     <li>When rendering, I try (keyword, <em>try</em>) to use the undo button as little as possible, instead opting to paint over my mistakes. </li>
 </ul>
-<p>These are my techniques for digital painting, at least. I hope to eventually write up my techniques for my traditional mediums of choice as well once I get more comfortable with them.</p>
-<p>I also <a href="https://www.tumblr.com/tri4ge/tagged/timelapse" target="_blank" rel="noopener noreferrer">upload my timelapses to my Tumblr blog</a> sometimes if you ever want to check them out for a visual of my techniques, which probably explain things better than I can through words.</p>
+<dd>These are my techniques for digital painting, at least. I hope to eventually write up my techniques for my traditional mediums of choice as well once I get more comfortable with them.</dd>
+<dd>I also <a href="https://www.tumblr.com/tri4ge/tagged/timelapse" target="_blank" rel="noopener noreferrer">upload my timelapses to my Tumblr blog</a> sometimes if you ever want to check them out for a visual of my techniques, which probably explain things better than I can through words.</dd>
 
-<h3 id="how-did-you-learn-to-build-fursuits-">How did you learn to build fursuits?</h3>
-<p>Tutorials. That's all there was to it for me, because there's not really any courses you can take to learn how to build a fursuit (at least, not any widespread ones. I do know there's that one elective course at <a href="https://www.stanfordfurries.org/" target="_blank" rel="noopener noreferrer">Stanford University</a> in Stanford, California, but these courses are far and few in between.)</p>
+<dt id="how-did-you-learn-to-build-fursuits-"><span>3.</span>How did you learn to build fursuits?</dt>
+<dd>Tutorials. That's all there was to it for me, because there's not really any courses you can take to learn how to build a fursuit (at least, not any widespread ones. I do know there's that one elective course at <a href="https://www.stanfordfurries.org/" target="_blank" rel="noopener noreferrer">Stanford University</a> in Stanford, California, but these courses are far and few in between.)</dd>
 
-<p>As for actual advice for newcomers to the craft, I have a few pointers:</p>
+<dd>As for actual advice for newcomers to the craft, I have a few pointers:</dd>
 <ul>
     <li>If this is your first time doing anything with sewing and crafting, then you don't have to jump right into making an entire head if you don't want to or don't feel ready. In fact, I recommend starting with a small project like a simple tail, working your way up with handpaws, before trying your hand at making a head.</li>
     <li><strong>Do your research.</strong> Learn about the terminology of different fursuit types to decide what you want to make. Familiarise yourself with the various materials required, as well as the options you have for crafting your suit. </li>
@@ -53,42 +93,40 @@ date: Last Modified
     <li>Read and watch as many tutorials as you possibly can. Even if you know how to do a specific step of the process, watch it anyway, because you may pick up a piece of knowledge that you weren't aware of before, or find a method of doing something that you prefer. I have many resources available on my <a href="/links" rel="noopener noreferrer">links page</a> specific to fursuit making for your convenience. </li>
 </ul>
 
-<h3 id="how-did-you-learn-to-code-how-did-you-code-x-">How did you learn to code/how did you code [X]?</h3>
-<p>It started out with me editing my profile on sites like DeviantArt, Tumblr, and Toyhouse, until I moved onto using templates for my first few static sites hosted on Neocities. From there, anytime I wanted to do something specific with my coding, I'd look it up on my search engine of choice and learn from there. </p>
-<p>I'm ambivalent about the idea of recommending templates to beginners, but if you're just starting and don't know what you're doing, then they can be helpful in that regard. I think even taking really simple templates and expanding upon them is better than not starting coding at all because you don't know how to make a layout from scratch. Regardless of whether or not you choose to use a template, I also have many links on my <a href="/links" rel="noopener noreferrer">/links</a> page to help guide you in the right direction.</p>
+<dt id="how-did-you-learn-to-code-how-did-you-code-x-"><span>4.</span>How did you learn to code/how did you code [X]?</dt>
+<dd>It started out with me editing my profile on sites like DeviantArt, Tumblr, and Toyhouse, until I moved onto using templates for my first few static sites hosted on Neocities. From there, anytime I wanted to do something specific with my coding, I'd look it up on my search engine of choice and learn from there. </dd>
+<dd>I'm ambivalent about the idea of recommending templates to beginners, but if you're just starting and don't know what you're doing, then they can be helpful in that regard. I think even taking really simple templates and expanding upon them is better than not starting coding at all because you don't know how to make a layout from scratch. Regardless of whether or not you choose to use a template, I also have many links on my <a href="/links" rel="noopener noreferrer">/links</a> page to help guide you in the right direction.</dd>
 
-<h3 id="can-i-use-your-artwork-as-my-profile-picture-banner-on-social-media-">Can I use your artwork as my profile picture/banner on social media?</h3>
-<p>If it's something you've gotten commissioned from me, then it's part of my <a href="/tos" rel="noopener noreferrer">terms of service</a> that you're allowed to use it on your social media profiles with credit! Similarly, I also allow fanart to be used in the same way.</p>
-<p>If it's art with my own personal characters, I'd prefer if you didn't, but I can't physically stop you from doing so. If it's art that is made for other people with their own characters, then I highly discourage you from using said artwork.</p>
+<dt id="can-i-use-your-artwork-as-my-profile-picture-banner-on-social-media-"><span>5.</span>Can I use your artwork as my profile picture/banner on social media?</dt>
+<dd>If it's something you've gotten commissioned from me, then it's part of my <a href="/tos" rel="noopener noreferrer">terms of service</a> that you're allowed to use it on your social media profiles with credit! Similarly, I also allow fanart to be used in the same way.</dd>
+<dd>If it's art with my own personal characters, I'd prefer if you didn't, but I can't physically stop you from doing so. If it's art that is made for other people with their own characters, then I highly discourage you from using said artwork.</dd>
 
-<h3 id="can-i-reupload-your-artwork-on-another-website-">Can I reupload your artwork on another website?</h3>
-<p>Please ask beforehand, or at the very least, credit me when you do so. However, you're more than free to share links to my artwork to other sites, since this directly connects people to it. </p>
+<dt id="can-i-reupload-your-artwork-on-another-website-"><span>6.</span>Can I reupload your artwork on another website?</dt>
+<dd>Please ask beforehand, or at the very least, credit me when you do so. However, you're more than free to share links to my artwork to other sites, since this directly connects people to it. </dd>
 
-<h3 id="can-i-take-inspiration-from-your-artwork-fursuit-work-website-">Can I take inspiration from your artwork/fursuit work/website?</h3>
-<p>Absolutely, please do! In fact, I don't even care that much about my stuff being referenced, copied or traced, so long as I'm credited in some way. I'm an advocate for <a href="https://en.wikipedia.org/wiki/Copyleft" target="_blank" rel="noopener noreferrer">copyleft</a> and don't believe in intellectual property.</p>
+<dt id="can-i-take-inspiration-from-your-artwork-fursuit-work-website-"><span>7.</span>Can I take inspiration from your artwork/fursuit work/website?</dt>
+<dd>Absolutely, please do! In fact, I don't even care that much about my stuff being referenced, copied or traced, so long as I'm credited in some way. I'm an advocate for <a href="https://en.wikipedia.org/wiki/Copyleft" target="_blank" rel="noopener noreferrer">copyleft</a> and don't believe in intellectual property.</dd>
 
-<h3 id="can-i-request-art-from-you-">Can I request art from you?</h3>
-<p>You can submit a form to commission personalized artwork from me, but I don't do free artwork for anybody! I do sometimes do art trades, but this is exclusive to friends, acquaintances, and mutuals.</p>
+<dt id="can-i-request-art-from-you-"><span>8.</span>Can I request art from you?</dt>
+<dd>You can submit a form to commission personalized artwork from me, but I don't do free artwork for anybody! I do sometimes do art trades, but this is exclusive to friends, acquaintances, and mutuals.</dd>
 
-<h3 id="can-you-code-a-site-for-me-">Can you code a site for me?</h3>
-<p>Probably not, definitely not for free. Coding is one of those things that I don't always have interest in doing and is an interest that comes in phases. I do make a few exceptions for friends, but those are made on a case-by-case basis.</p>
+<dt id="can-you-code-a-site-for-me-"><span>9.</span>Can you code a site for me?</dt>
+<dd>Probably not, definitely not for free. Coding is one of those things that I don't always have interest in doing and is an interest that comes in phases. I do make a few exceptions for friends, but those are made on a case-by-case basis.</dd>
 
-<h3 id="can-you-teach-me-how-to-draw-code-">Can you teach me how to draw/code?</h3>
-<p>Not only do I not have the time or energy for this, but I also am not a good teacher whatsoever. You'd be much better off looking up tutorials and/or asking someone else for help.</p>
-
-<hr>
+<dt id="can-you-teach-me-how-to-draw-code-"><span>10.</span>Can you teach me how to draw/code?</dt>
+<dd>Not only do I not have the time or energy for this, but I also am not a good teacher whatsoever. You'd be much better off asking someone else for help.</dd>
 
 <h2 id="personal" style="text-align: center;">Personal</h2>
 
-<h3 id="why-is-your-fursona-a-vampire-bat-">Why is your fursona a vampire bat?</h3>
-<p>Depends on if you wanna hear the simple or real answer.</p>
-<p><strong>Simple answer:</strong> It's a metaphor for being disabled and dependent on others for your own survival. I "feed" off of the lives of others in order to sustain my own, the same way vampire bats feed off of the blood of other animals.</p>
-<p><strong>Real answer:</strong> My partner actually came up with the idea of us being a common vampire bat and cow couple, since common vampire bats feed off of cattle! We both thought this dynamic was cute and interesting to explore in both of our fursonas' lore, where Mez (my partner's fursona) provides Hyson with his blood meals. The disability metaphor still stands here, and especially so if you consider Mez to be a kind of caregiver for Hyson. The vampire bat was also generally everything I was looking for in a fursona species—a small, flying mammal with an ugly-cute pug-like face!</p>
-<p>I also just relate heavily to vampire bats in general! After my partner suggested it as a fursona species, I started researching more into them, and found out that I'm so much like one! Not only do I heavily relate to vampirism as a disabled person, but I also relate to the way vampire bats are creatures who practice interdependence, which is something I value more than complete independence. I see myself in them so much that I truly believe my soul and physicality is that of a vampire bat, rather than being human. </p>
+<dt id="why-is-your-fursona-a-vampire-bat-"><span>1.</span>Why is your fursona a vampire bat?</dt>
+<dd>Depends on if you wanna hear the simple or real answer.</dd>
+<dd><strong>Simple answer:</strong> It's a metaphor for being disabled and dependent on others for your own survival. I "feed" off of the lives of others in order to sustain my own, the same way vampire bats feed off of the blood of other animals.</dd>
+<dd><strong>Real answer:</strong> My partner actually came up with the idea of us being a common vampire bat and cow couple, since common vampire bats feed off of cattle! We both thought this dynamic was cute and interesting to explore in both of our fursonas' lore, where Mez (my partner's fursona) provides Hyson with his blood meals. The disability metaphor still stands here, and especially so if you consider Mez to be a kind of caregiver for Hyson. The vampire bat was also generally everything I was looking for in a fursona species—a small, flying mammal with an ugly-cute pug-like face!</dd>
+<dd>I also just relate heavily to vampire bats in general! After my partner suggested it as a fursona species, I started researching more into them, and found out that I'm so much like one! Not only do I heavily relate to vampirism as a disabled person, but I also relate to the way vampire bats are creatures who practice interdependence, which is something I value more than complete independence. I see myself in them so much that I truly believe my soul and physicality is that of a vampire bat, rather than being human. </dd>
 
-<p>I also have other fursonas of other species, but I won't get into every single one of them and why I chose their species here, otherwise this would end up becoming an entire essay to cover all of them.</p>
+<dd>I also have other fursonas of other species, but I won't get into every single one of them and why I chose their species here, otherwise this would end up becoming an entire essay to cover all of them.</dd>
 
-<h3 id="are-you-really-disabled-do-you-really-have-xyz-">Are you <em>really</em> disabled / do you <em>really</em> have [XYZ]?</h3>
-<p>Yes, I am professionally diagnosed. If you don't believe me, that's your problem to solve, so leave me out of it.</p>
+<dt id="are-you-really-disabled-do-you-really-have-xyz-"><span>2.</span>Are you <em>really</em> disabled / do you <em>really</em> have [XYZ]?</dt>
+<dd>Yes, I am professionally diagnosed. If you don't believe me, that's your problem to solve, so leave me out of it.</dd>
 
 </div>
