@@ -38,7 +38,7 @@ layout: base.njk
   <h2 id="latest-art-pieces">Latest Art Pieces</h2>
   <hr>
   <div class="artwork">
-    {% for post in collections[2026] | reverse %}
+    {% for post in collections.recentArt %}
       <a href="{{ post.url }}"><img src="/img/gallery/thumbnails/{{ post.data.thumbnail }}" loading="lazy" /></a>
     {% endfor %}
   </div>
@@ -50,7 +50,6 @@ layout: base.njk
         <h2 id="recent-updates">Recent Updates</h2>
         <hr>
         {% include 'updates26.njk' %}
-        {% include 'updates25.njk' %}
         <hr>
         <a href="/changelog" style="text-align:center;">Full changelog</a>
       </div>
@@ -71,9 +70,9 @@ layout: base.njk
             <br>
           <a href="https://x.com/tri4geart" target="_blank" class="outlink fa-brands fa-twitter" data-tippy-content="Twitter"></a>
           <a href="https://bsky.app/profile/tri4ge.icu" target="_blank" class="outlink fa-brands fa-bluesky" data-tippy-content="BlueSky"></a>
-          <a href="https://pawb.fun/@tri4ge" target="_blank" class="outlink fa-brands fa-mastodon" rel="me" data-tippy-content="Mastodon"></a>
           <a href="https://tri4ge.tumblr.com/" target="_blank" class="outlink fa-brands fa-tumblr" data-tippy-content="Tumblr"></a>
-          <a href="https://www.instagram.com/tri4ge.icu/" target="_blank" class="outlink fa-brands fa-instagram" data-tippy-content="Instagram"></a>
+          <a href="https://www.instagram.com/tri4ge.icu/" target="_blank" class="outlink fa-brands fa-instagram" data-tippy-content="Instagram"></a><br>
+          <a href="https://pawb.fun/@tri4ge" target="_blank" class="outlink fa-brands fa-mastodon" rel="me" data-tippy-content="Mastodon"></a>
           <a href="https://toyhou.se/tri4ge" target="_blank" class="outlink fa-solid fa-house" data-tippy-content="Toyhouse"></a>
           <a href="https://www.furaffinity.net/user/tri4ge" target="_blank" class="outlink fa-solid fa-paw" data-tippy-content="FurAffinity"></a>
               <br>
@@ -86,7 +85,15 @@ layout: base.njk
       <div class="content" id="blogroll">
         <h2 id="recent-posts">Recent Blog Posts</h2>
         <hr>
-        {% include '../src/blog/featured.html' %}
+        {% for post in collections.recentPosts | reverse %}
+          <h2><a href="{{post.url}}">{{ post.data.title }}</a></h2>
+          <p>{{ post.data.description }}</p>
+          <p class="date">
+            <i class="far fa-calendar"></i> {{ post.data.date | date }}
+          </p>
+          {% endfor %}
+          <hr>
+          <strong><p style="text-align: center;">See all blog posts <a href="/blog/index">here</a>!</p></strong>
       </div>
     </div>
 </div>

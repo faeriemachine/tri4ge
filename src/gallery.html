@@ -13,8 +13,19 @@ layout: base.njk
 </div>
 <div class="box">
     <div class="gallery">
-    {% for post in collections.gallery | reverse %}
-    <a href="{{ post.url }}"><img src="/img/gallery/thumbnails/{{ post.data.thumbnail }}" loading="lazy" /></a> {{ post.data.dateString }}
+    <h2 class="year" id="2026">2026</h2>
+    {% for post in collections[2026] | reverse %}
+        <a href="{{ post.url }}"><img src="/img/gallery/thumbnails/{{ post.data.thumbnail }}" loading="lazy" /></a> {{ post.data.dateString }}
+    {% endfor %}
+
+    <h2 class="year" id="2025">2025</h2>
+    {% for post in collections[2025] | reverse %}
+        <a href="{{ post.url }}"><img src="/img/gallery/thumbnails/{{ post.data.thumbnail }}" loading="lazy" /></a> {{ post.data.dateString }}
+    {% endfor %}
+
+    <h2 class="year" id="2024">2024</h2>
+    {% for post in collections[2024] | reverse %}
+        <a href="{{ post.url }}"><img src="/img/gallery/thumbnails/{{ post.data.thumbnail }}" loading="lazy" /></a> {{ post.data.dateString }}
     {% endfor %}
     </div>
 </div>
@@ -33,36 +44,36 @@ layout: base.njk
     <details name="tags">
         <summary>Medium</summary>
         <ul class="tags">
-            <li class="tags"><a class="tags" href="/gallery/tagged/digital/">#digital</a> |</li>
-            <li class="tags"><a class="tags" href="/gallery/tagged/ms-paint/">#ms paint</a> |</li>
-            <li class="tags"><a class="tags" href="/gallery/tagged/traditional/">#traditional</a> |</li>
             <li class="tags"><a class="tags" href="/gallery/tagged/alcohol-markers/">#alcohol markers</a> |</li>
-            <li class="tags"><a class="tags" href="/gallery/tagged/oil-pastels/">#oil pastels</a> |</li>
             <li class="tags"><a class="tags" href="/gallery/tagged/coloured-pencils/">#coloured pencils</a> |</li>
             <li class="tags"><a class="tags" href="/gallery/tagged/crayons/">#crayons</a> |</li>
-            <li class="tags"><a class="tags" href="/gallery/tagged/paint-markers/">#paint markers</a></li>
+            <li class="tags"><a class="tags" href="/gallery/tagged/digital/">#digital</a> |</li>
+            <li class="tags"><a class="tags" href="/gallery/tagged/ms-paint/">#ms paint</a> |</li>
+            <li class="tags"><a class="tags" href="/gallery/tagged/oil-pastels/">#oil pastels</a> |</li>
+            <li class="tags"><a class="tags" href="/gallery/tagged/paint-markers/">#paint markers</a> |</li>
+            <li class="tags"><a class="tags" href="/gallery/tagged/traditional/">#traditional</a></li>
         </ul>
     </details>
 
     <details name="tags">
         <summary>Client work</summary>
         <ul class="tags">
+            <li class="tags"><a class="tags" href="/gallery/tagged/commission/">#commission</a> |</li>
             <li class="tags"><a class="tags" href="/gallery/tagged/gift">#gift</a> |</li>
-            <li class="tags"><a class="tags" href="/gallery/tagged/trade/">#trade</a> |</li>
-            <li class="tags"><a class="tags" href="/gallery/tagged/commission/">#commission</a></li>
+            <li class="tags"><a class="tags" href="/gallery/tagged/trade/">#trade</a></li>
         </ul>
     </details>
 
     <details name="tags">
         <summary>Subject</summary>
         <ul class="tags">
-            <li class="tags"><a class="tags" href="/gallery/tagged/painting/">#painting</a> |</li>
+            <li class="tags"><a class="tags" href="/gallery/tagged/character-design/">#character design</a> |</li>
+            <li class="tags"><a class="tags" href="/gallery/tagged/fanart/">#fanart</a> |</li>
             <li class="tags"><a class="tags" href="/gallery/tagged/illustrations/">#illustration</a> |</li>
+            <li class="tags"><a class="tags" href="/gallery/tagged/painting/">#painting</a> |</li>
             <li class="tags"><a class="tags" href="/gallery/tagged/sketch/">#sketch</a> |</li>
             <li class="tags"><a class="tags" href="/gallery/tagged/study/">#study</a> |</li>
-            <li class="tags"><a class="tags" href="/gallery/tagged/character-design/">#character design</a> |</li>
-            <li class="tags"><a class="tags" href="/gallery/tagged/reference/">#reference</a> |</li>
-            <li class="tags"><a class="tags" href="/gallery/tagged/fanart/">#fanart</a></li>
+            <li class="tags"><a class="tags" href="/gallery/tagged/reference/">#reference</a></li>
         </ul>
     </details>
 
@@ -80,7 +91,7 @@ layout: base.njk
             <li class="tags"><a class="tags" href="/gallery/tagged/kitto/">#kitto</a> |</li>
             <li class="tags"><a class="tags" href="/gallery/tagged/mez/">#mez</a> |</li>
             <li class="tags"><a class="tags" href="/gallery/tagged/olive/">#olive</a> |</li>
-            <li class="tags"><a class="tags" href="/gallery/tagged/plushies/">#plushies |</a></li>
+            <li class="tags"><a class="tags" href="/gallery/tagged/plushies/">#plushies</a> |</li>
             <li class="tags"><a class="tags" href="/gallery/tagged/proto-kitto/">#proto-kitto</a> |</li>
             <li class="tags"><a class="tags" href="/gallery/tagged/runt/">#runt</a> |</li>
             <li class="tags"><a class="tags" href="/gallery/tagged/servo/">#servo</a> |</li>
