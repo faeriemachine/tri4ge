@@ -85,7 +85,7 @@ layout: base.njk
       <div class="content" id="blogroll">
         <h2 id="recent-posts">Recent Blog Posts</h2>
         <hr>
-        {% for post in collections.recentPosts | reverse %}
+        {% for post in collections.recentPosts %}
           <h2><a href="{{post.url}}">{{ post.data.title }}</a></h2>
           <p>{{ post.data.description }}</p>
           <p class="date">
@@ -147,11 +147,11 @@ layout: base.njk
     <h3 id="turtle-island">Turtle Island</h3>
     <ul>
       <li><a target="_blank" rel="noopener noreferrer" href="https://native-land.ca/">Native Land</a> - An interactive digital map that shows you who's land you're living on.</li>
-      <li><a target="_blank" rel="noopener noreferrer" href="https://www.mothernation.org/">Mother nation</a> - A Native-led nonprofit offering healing services, advocacy, mentorship, and homeless prevention for Native and Indigenous women and girls in the Washington State.</li>
+      <li><a target="_blank" rel="noopener noreferrer" href="https://www.mothernation.org/">Mother Nation</a> - A Native-led nonprofit offering healing services, advocacy, mentorship, and homeless prevention for Native and Indigenous women and girls in the Washington State.</li>
       <li><a target="_blank" rel="noopener noreferrer" href="https://www.irsss.ca/">Indian Residential School Survivors Society</a> - A Canadian charity committed to supporting survivors of the Indian Residential School system, including counselling, advocacy, and community outreach.</li>
       <li><a target="_blank" rel="noopener noreferrer" href="https://natifs.org/">North American Traditional Indigenous Food Systems</a> - An organization that works towards Indigenous food revival and educational support.</a></li>
       <li><a target="_blank" rel="noopener noreferrer" href="https://www.aicdc-mn.org/">American Indian Community Development Corporation</a> - An organization that provides housing and entrepreneurial programs to homeless Indigenous individuals suffering from substance use disorders.</li>
-      <li><a target="_blank" rel="noopener noreferrer" href="https://www.migizi.org/">MIGIZI</a> - A Minneapolis oragnization that seeks to provide support for Indigenous youth that nurtuers their educational, social, economic and cultural development.</li>
+      <li><a target="_blank" rel="noopener noreferrer" href="https://www.migizi.org/">MIGIZI</a> - A Minneapolis oragnization that seeks to provide support for Indigenous youth that nurtures their educational, social, economic and cultural development.</li>
       <li><a target="_blank" rel="noopener noreferrer" href="https://www.nativelandconservancy.org/">Native Land Conservancy</a> - A Native-led land conservation that aims to protect, share and restore land and water for both people and animals.</li>
     </ul>
     <hr>
