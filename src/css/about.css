@@ -47,6 +47,14 @@
     background-color: var(--light--bg-secondary);
 }
 
+figure img{
+  transition: all .3s ease;
+}
+
+figure img:hover{
+  transform: scale(1.05);
+}
+
 /* Marquee */
 .marqueebox{
 margin: 5px auto;
@@ -127,11 +135,11 @@ marquee items or other effects and styles!*/
   #one {
     width: auto;
   }
-  
+
   .boxbio {
     width: 100%;
   }
-  
+
   .boxavi {
     width: auto;
   }
